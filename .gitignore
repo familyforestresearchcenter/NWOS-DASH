@@ -42,8 +42,8 @@ vignettes/*.pdf
 /DEPLOY/rsconnect
 
 # Data files
-/*.RData
-/*.RDS
+*.RData
+*.RDS
 
 # Project file
 NWOS-DASH.Rproj
