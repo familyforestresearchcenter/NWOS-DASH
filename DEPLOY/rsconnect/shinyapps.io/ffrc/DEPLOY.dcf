@@ -1,0 +1,12 @@
+name: DEPLOY
+title: DEPLOY
+username:
+account: ffrc
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1467593
+bundleId: 2586873
+url: https://ffrc.shinyapps.io/DEPLOY/
+when: 1573671593.63337
+asMultiple: FALSE
+asStatic: FALSE

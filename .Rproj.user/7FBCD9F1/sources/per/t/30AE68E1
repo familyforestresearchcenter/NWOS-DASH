@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1629859166882.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "30AE68E1",
+    "lastKnownWriteTime" : 3762811580311550498,
+    "last_content_update" : 1629859166882,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "3AF991B",
+        "caption" : "NWOS_2006_FFO_ONE_PLUS",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=NWOS_2006_FFO_ONE_PLUS&cache_key=3AF991B",
+        "displayedObservations" : 212184,
+        "environment" : "",
+        "expression" : "NWOS_2006_FFO_ONE_PLUS",
+        "object" : "NWOS_2006_FFO_ONE_PLUS",
+        "preview" : 0,
+        "totalObservations" : 212184,
+        "variables" : 9
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
