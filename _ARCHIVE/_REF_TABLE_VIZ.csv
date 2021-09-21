@@ -1,0 +1,224 @@
+VARIABLE,ï..TABLE,DROPDOWN,DESCRIPTION
+TOTAL,TOTAL,Total area and number of ownerships,family forest ownerships
+AC_LAND_CAT,SIZE,Size of land holdings,size of land holdings in acres
+AC_WOOD_CAT,SIZE,Size of forest holdings,size of forest holdings in acres
+PARC_MULTI,SIZE,Number of forested parcels,whether owners own multiple forested parcels
+OWNTYPE,OWNTYPE_NUM,Ownership type,ownership type
+OWNERS_NUMBER_CAT,OWNTYPE_NUM,Number of owners,number of owners
+HOME_2,HOME_FARM,Part of home,whether owners have a primary residence within 1 mile of their forestland
+CABIN_2,HOME_FARM,Part of cabin or second home,whether owners have a cabin or secondary residence within 1 mile of their forestland
+FARM_2,HOME_FARM,Part of farm,whether owners have a farm within 1 mile of their forestland
+OBJ_BEA,OBJ_1,Objectives: beauty or scenery,the importance of beauty or scenery as a reason for owning forestland
+OBJ_NAT,OBJ_1,Objectives: nature or biological diversity,the importance of protecting nature or biological diversity as a reason for owning forestland
+OBJ_WAT,OBJ_1,Objectives: water resources,the importance of protecting water resources as a reason for owning forestland
+OBJ_WIL,OBJ_1,Objectives: wildlife,the importance of protecting or improving wildlife habitat as a reason for owning forestland
+OBJ_INV,OBJ_1,Objectives: land investment,the importance of land investment as a reason for owning forestland
+OBJ_PRI,OBJ_1,Objectives: privacy,the importance of privacy as a reason for owning forestland
+OBJ_FAM,OBJ_2,Objectives: raising family,the importance of raising family as a reason for owning forestland
+OBJ_CHILD,OBJ_2,Objectives: passing land on to children,the importance of passing land onto children or other heirs as a reason for owning forestland
+OBJ_FIRE,OBJ_2,Objectives: firewood,the importance of firewood as a reason for owning forestland
+OBJ_TIM,OBJ_2,Objectives: timber products,the importance of timber products as a reason for owning forestland
+OBJ_NTFP,OBJ_2,Objectives: non-timber forest products,the importance of non-timber forest products as a reason for owning forestland
+OBJ_HUNT,OBJ_2,Objectives: hunting,the importance of hunting as a reason for owning forestland
+OBJ_REC,OBJ_3,Objectives: recreation,the importance of recreation (other than hunting) as a reason for owning forestland
+ACQ_TYPE_PURCH,ACQ,Acquisition type,acquisition type
+ACQ_TYPE_INHERIT,ACQ,Acquisition type,acquisition type
+ACQ_TYPE_GIFT,ACQ,Acquisition type,acquisition type
+ACQ_TYPE_OTHER,ACQ,Acquisition type,acquisition type
+ACQ_SRC_PARENT,ACQ,Acquisition source,acquisition source
+ACQ_SRC_SPOUSE,ACQ,Acquisition source,acquisition source
+ACQ_SRC_FAM,ACQ,Acquisition source,acquisition source
+ACQ_SRC_INDIV,ACQ,Acquisition source,acquisition source
+ACQ_SRC_BUS,ACQ,Acquisition source,acquisition source
+ACQ_SRC_GOV,ACQ,Acquisition source,acquisition source
+TENURE_CAT,ACQ,Land tenure,land tenure
+TRAN,TRAN,Land transfer,whether forestland was ever sold or given away
+PARC,TRAN,Land parcellation,whether forestland was ever subdivided or split into multiple parcels as part of a land transfer
+TRAN_TO_CHILD,TRAN,Recipients of transferred land,the entity to whom land was transferred
+TRAN_TO_FAM,TRAN,Recipients of transferred land,the entity to whom land was transferred
+TRAN_TO_INDIV,TRAN,Recipients of transferred land,the entity to whom land was transferred
+TRAN_TO_BUS,TRAN,Recipients of transferred land,the entity to whom land was transferred
+TRAN_TO_GOV,TRAN,Recipients of transferred land,the entity to whom land was transferred
+TRAN_RECENT,TRAN,Recent land transfers,whether or not land was transferred in the past 5 years
+MAN_OWN,MAN,Primary decision maker,primary forest management decisions maker
+MAN_SPOUSE,MAN,Primary decision maker,primary forest management decisions maker
+MAN_CHILD,MAN,Primary decision maker,primary forest management decisions maker
+MAN_PARENT,MAN,Primary decision maker,primary forest management decisions maker
+MAN_FAM,MAN,Primary decision maker,primary forest management decisions maker
+MAN_PARTNER,MAN,Primary decision maker,primary forest management decisions maker
+MAN_FORESTER,MAN,Primary decision maker,primary forest management decisions maker
+MAN_OTH,MAN,Primary decision maker,primary forest management decisions maker
+MAN_PLAN_KNOW,MAN_PLAN,Management plan familiarity,landowners' familiary with management plans
+MAN_PLAN,MAN_PLAN,Management plan,whether or not landowners have a management plan
+MAN_PLAN_WRITER,MAN_PLAN,Management plan writer,who wrote the management plan for the forestland
+MAN_PLAN_IMPLEMENT,MAN_PLAN,Management plan implementation,whether or not the landowners' have taken steps to implement the management plan
+CUT,CUT,Timber harvesting,whether timber had been harvested during the landowners' tenure
+CUT_TYPE_FIRE,CUT,Timber products harvested,type of timber products harvested
+CUT_TYPE_LOGS,CUT,Timber products harvested,type of timber products harvested
+CUT_TYPE_CHIPS,CUT,Timber products harvested,type of timber products harvested
+CUT_TYPE_FENCE,CUT,Timber products harvested,type of timber products harvested
+CUT_TYPE_OTH,CUT,Timber products harvested,type of timber products harvested
+CUT_WHY_SALE,CUT,Reasons for timber products harvesting,reasons for timber product harvesting
+CUT_WHY_PERS,CUT,Reasons for timber products harvesting,reasons for timber product harvesting
+CUT_WHY_OTH,CUT,Reasons for timber products harvesting,reasons for timber product harvesting
+CUT_FORESTER,CUT,Use of professional forester,"whether a professional forester was used to plan, mark, contract or oversee harvests"
+NTFP_TYPE_EDIB,NTFP,Types of nontimber forest products harvested,types of nontimber forest products harvested
+NTFP_TYPE_MEDI,NTFP,Types of nontimber forest products harvested,types of nontimber forest products harvested
+NTFP_TYPE_LAND,NTFP,Types of nontimber forest products harvested,types of nontimber forest products harvested
+NTFP_TYPE_DECO,NTFP,Types of nontimber forest products harvested,types of nontimber forest products harvested
+NTFP_TYPE_OTH,NTFP,Types of nontimber forest products harvested,types of nontimber forest products harvested
+NTFP_TYPE_NONE,NTFP,Types of nontimber forest products harvested,types of nontimber forest products harvested
+NTFP_WHY_SALE,NTFP,Reasons for nontimber forest products harvesting,reasons for harvesting nontimber forest products
+NTFP_WHY_PERS,NTFP,Reasons for nontimber forest products harvesting,reasons for harvesting nontimber forest products
+ACT_CUT_SALE,ACT,Past management activities,past (previous 5 years) management activities
+ACT_CUT_PERS,ACT,Past management activities,past (previous 5 years) management activities
+ACT_NTFP,ACT,Past management activities,past (previous 5 years) management activities
+ACT_RED_FIRE,ACT,Past management activities,past (previous 5 years) management activities
+ACT_CONTROL_BURN,ACT,Past management activities,past (previous 5 years) management activities
+ACT_INVA,ACT,Past management activities,past (previous 5 years) management activities
+ACT_INS,ACT,Past management activities,past (previous 5 years) management activities
+ACT_ROAD,ACT,Past management activities,past (previous 5 years) management activities
+ACT_TRAIL,ACT,Past management activities,past (previous 5 years) management activities
+ACT_WILD,ACT,Past management activities,past (previous 5 years) management activities
+ACT_GRAZE,ACT,Past management activities,past (previous 5 years) management activities
+ACT_OTH,ACT,Past management activities,past (previous 5 years) management activities
+ACT_NONE,ACT,Past management activities,past (previous 5 years) management activities
+FUT_CUT_SALE,FUT,Future management activities,future (next 5 years) management activities
+FUT_CUT_PERS,FUT,Future management activities,future (next 5 years) management activities
+FUT_NTFP,FUT,Future management activities,future (next 5 years) management activities
+FUT_RED_FIRE,FUT,Future management activities,future (next 5 years) management activities
+FUT_CONTROL_BURN,FUT,Future management activities,future (next 5 years) management activities
+FUT_INVA,FUT,Future management activities,future (next 5 years) management activities
+FUT_INS,FUT,Future management activities,future (next 5 years) management activities
+FUT_ROAD,FUT,Future management activities,future (next 5 years) management activities
+FUT_TRAIL,FUT,Future management activities,future (next 5 years) management activities
+FUT_WILD,FUT,Future management activities,future (next 5 years) management activities
+FUT_GRAZE,FUT,Future management activities,future (next 5 years) management activities
+FUT_OTH,FUT,Future management activities,future (next 5 years) management activities
+FUT_NONE,FUT,Future management activities,future (next 5 years) management activities
+FUT_DONTKNOW,FUT,Future management activities,future (next 5 years) management activities
+CERT_KNOW,CERT,Green certification familiarity,familiarity with green certification programs
+CERT,CERT,Green certification, participation in green certification programs
+TAX_KNOW,TAX,Property tax programs familiarity,familiarity with property tax programs
+TAX,TAX,Property tax programs,participation in property tax programs
+EASE_KNOW,EASE,Conservation easements familiarity,familiarity with conservation easements
+EASE,EASE,Conservation easements,whether or landowners have a conservation easement
+EASE_5YR,EASE,"Conservation easements, future participation",likelihood of landowners will adopt a conservation easement in the next five years
+COST_KNOW,COST,Cost-share programs familiarity,familiarity with cost-share programs
+COST_5YR,COST,Cost-share programs,whether or not landowners took advantage of cost-share programs in the past 5 years
+CARBON_KNOW,CARBON,Carbon sequestration programs familiarity,familiarity with carbon sequestration programs
+CARBON,CARBON,Carbon sequestration programs,whether or not any of landowners' forestland is enrolled carbon sequestration programs
+LEASE,LEASE,Leasing,whether or not landowners have leased their forestland (other than logging)
+LEASE_ACT_HUNT,LEASE,Leasing activities,activities for which landowners have leased their forestland (other than logging)
+LEASE_ACT_REC,LEASE,Leasing activities,activities for which landowners have leased their forestland (other than logging)
+LEASE_ACT_GRAZE,LEASE,Leasing activities,activities for which landowners have leased their forestland (other than logging)
+LEASE_ACT_OTH,LEASE,Leasing activities,activities for which landowners have leased their forestland (other than logging)
+LEASE_5YR,LEASE,Recent leasing activities,whether or not landowners have leased their forestland (other than logging) in the past 5 years
+REC_WHO_OWN,REC,"Recreation, beneficiaries",who has recreated on landowners land in the past 5 years
+REC_WHO_CHILD,REC,"Recreation, beneficiaries",who has recreated on landowners land in the past 5 years
+REC_WHO_FAM,REC,"Recreation, beneficiaries",who has recreated on landowners land in the past 5 years
+REC_WHO_FRND,REC,"Recreation, beneficiaries",who has recreated on landowners land in the past 5 years
+REC_WHO_NEIGH,REC,"Recreation, beneficiaries",who has recreated on landowners land in the past 5 years
+REC_WHO_PUB_FREE,REC,"Recreation, beneficiaries",who has recreated on landowners land in the past 5 years
+REC_WHO_PUB_FEE,REC,"Recreation, beneficiaries",who has recreated on landowners land in the past 5 years
+REC_WHO_OTH,REC,"Recreation, beneficiaries",who has recreated on landowners land in the past 5 years
+REC_WHO_NONE,REC,"Recreation, beneficiaries",who has recreated on landowners land in the past 5 years
+REC_HOW_HUNT,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+REC_HOW_FISH,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+REC_HOW_HIKE,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+REC_HOW_BIKE,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+REC_HOW_CAMP,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+REC_HOW_HORSE,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+REC_HOW_SKI,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+REC_HOW_OHV,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+REC_HOW_OTH,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+POST,POST,Posting,whether or not land is posted to restrict access or use by the general public
+POST_RESTR_TRES,POST,Restricted activities,restricted (i.e. posted) activities
+POST_RESTR_HUNT,POST,Restricted activities,land posting status
+POST_RESTR_VEH,POST,Restricted activities,land posting status
+POST_RESTR_OTH,POST,Restricted activities,land posting status
+ADVICE,ADVICE,Landowners seeking advice,Whether or not advice was received in the past five years
+ADV_TOP_INS,ADVICE,Advice topics,Advice topics received in the last five years
+ADV_TOP_WILD,ADVICE,Advice topics,Advice topics received in the last five years
+ADV_TOP_TIM,ADVICE,Advice topics,Advice topics received in the last five years
+ADV_TOP_CONS,ADVICE,Advice topics,Advice topics received in the last five years
+ADV_TOP_FIRE,ADVICE,Advice topics,Advice topics received in the last five years
+ADV_TOP_INVAS,ADVICE,Advice topics,Advice topics received in the last five years
+ADV_TOP_OTH,ADVICE,Advice topics,Advice topics received in the last five years
+ADV_METH_TALK,ADVICE,Methods of advice,Methods of advice received in the last five years
+ADV_METH_VISIT,ADVICE,Methods of advice,Methods of advice received in the last five years
+ADV_METH_WRIT,ADVICE,Methods of advice,Methods of advice received in the last five years
+ADV_METH_NET,ADVICE,Methods of advice,Methods of advice received in the last five years
+ADV_METH_EMAIL,ADVICE,Methods of advice,Methods of advice received in the last five years
+ADV_METH_CONF,ADVICE,Methods of advice,Methods of advice received in the last five years
+ADV_METH_OTH,ADVICE,Methods of advice,Methods of advice received in the last five years
+ADV_SRC_STATE,ADVICE,Sources of advice,Source of advice received in the last five years
+ADV_SRC_EXT,ADVICE,Sources of advice,Source of advice received in the last five years
+ADV_SRC_FED,ADVICE,Sources of advice,Source of advice received in the last five years
+ADV_SRC_PRIV,ADVICE,Sources of advice,Source of advice received in the last five years
+ADV_SRC_OWNER,ADVICE,Sources of advice,Source of advice received in the last five years
+ADV_SRC_FAM,ADVICE,Sources of advice,Source of advice received in the last five years
+ADV_SRC_OTH,ADVICE,Sources of advice,Source of advice received in the last five years
+INFO_TIM,ASSIST,Preferred assistance topics,Preferred assistance topics
+INFO_TRAN,ASSIST,Preferred assistance topics,Preferred assistance topics
+INFO_EASE,ASSIST,Preferred assistance topics,Preferred assistance topics
+INFO_WILD,ASSIST,Preferred assistance topics,Preferred assistance topics
+INFO_INVAS,ASSIST,Preferred assistance topics,Preferred assistance topics
+INFO_FIRE,ASSIST,Preferred assistance topics,Preferred assistance topics
+INFO_INS,ASSIST,Preferred assistance topics,Preferred assistance topics
+INFO_OTH,ASSIST,Preferred assistance topics,Preferred assistance topics
+INFO_NONE,ASSIST,Preferred assistance topics,Preferred assistance topics
+HELP_TYPE_TALK_NEIGH,ASSIST,Preferred methods of assistance,preferred assistance methods
+HELP_TYPE_TALK_EXP,ASSIST,Preferred methods of assistance,preferred assistance methods
+HELP_TYPE_VISIT,ASSIST,Preferred methods of assistance,preferred assistance methods
+HELP_TYPE_WRIT,ASSIST,Preferred methods of assistance,preferred assistance methods
+HELP_TYPE_NET,ASSIST,Preferred methods of assistance,preferred assistance methods
+HELP_TYPE_EMAIL,ASSIST,Preferred methods of assistance,preferred assistance methods
+HELP_TYPE_CONF,ASSIST,Preferred methods of assistance,preferred assistance methods
+HELP_TYPE_OTH,ASSIST,Preferred methods of assistance,preferred assistance methods
+HELP_TYPE_NA,ASSIST,Preferred methods of assistance,preferred assistance methods
+HELP_COST,ASSIST,Preferred assistance programs/policies,preferred assistance programs and policies
+HELP_TAX,ASSIST,Preferred assistance programs/policies,preferred assistance programs and policies
+HELP_TIM,ASSIST,Preferred assistance programs/policies,preferred assistance programs and policies
+HELP_OTH,ASSIST,Preferred assistance programs/policies,preferred assistance programs and policies
+HELP_NONE,ASSIST,Preferred assistance programs/policies,preferred assistance programs and policies
+CNC_AIR,CNC_1,Concerns: air pollution,landowners' level of concern about air pollution
+CNC_CLIM,CNC_1,Concerns: climate change,landowners' level of concern about climate change
+CNC_ANIM,CNC_1,Concerns: damage from animals,landowners' level of concern about damage from animals
+CNC_DEV,CNC_1,Concerns: development of nearby lands,landowners' level of concern about development of nearby lands
+CNC_WAT_LACK,CNC_1,Concerns: drought or lack of water,landowners' level of concern about drought or lack of water
+CNC_OHV,CNC_1,Concerns: damage or noise from off-road vehicles,landowners' level of concern about damage or noise from offroad vehicles
+CNC_GOVT,CNC_2,Concerns: government regulation,landowners' level of concern about government regulation
+CNC_TAX,CNC_2,Concerns: high property taxes,landowners' level of concern about high property taxes
+CNC_INVA,CNC_2,Concerns: invasive plants,landowners' level of concern about invasive plants
+CNC_HEIR,CNC_2,Concerns: keeping land intact,landowners' level of concern about keeping land intact for future generations
+CNC_DUMP,CNC_2,Concerns: misuse of wooded land,"landowners' level of concern about misuse of wooded land, such as vandalism or dumping"
+CNC_TRES,CNC_2,Concerns: trespassing or poaching,landowners' level of concern about trespassing or poaching
+CNC_INS,CNC_3,Concerns:  unwanted insects or diseases,landowners' level of concern about unwanted insects or diseases
+CNC_WAT_POL,CNC_3,Concerns: water pollution,landowners' level of concern about water pollution
+CNC_FIRE,CNC_3,Concerns: wildfire,landowners' level of concern about wildfire
+CNC_STORM,CNC_3,Concerns: wind or ice storms,landowners' level of concern about wind or ice storms
+TRAN_FUT,TRAN_FUT,Future land transfer,likelihood of land transfer in the next 5 years
+TRAN_FUT_TO_CHILD,TRAN_FUT,Future land transfer recipients,the entity to whom land will likely be transferred in the next 5 years
+TRAN_FUT_TO_FAM,TRAN_FUT,Future land transfer recipients,the entity to whom land will likely be transferred in the next 5 years
+TRAN_FUT_TO_INDIV,TRAN_FUT,Future land transfer recipients,the entity to whom land will likely be transferred in the next 5 years
+TRAN_FUT_TO_BUS,TRAN_FUT,Future land transfer recipients,the entity to whom land will likely be transferred in the next 5 years
+TRAN_FUT_TO_GOV,TRAN_FUT,Future land transfer recipients,the entity to whom land will likely be transferred in the next 5 years
+TRAN_FUT_TO_OTH,TRAN_FUT,Future land transfer recipients,the entity to whom land will likely be transferred in the next 5 years
+TRAN_FUT_TO_DONTKNOW,TRAN_FUT,Future land transfer recipients,the entity to whom land will likely be transferred in the next 5 years
+ATT_WOODED,ATT,Attitudes: land to stay wooded,to what extent the landowners agree that owners want their wooded land to remain wooded
+ATT_SELL,ATT,Attitudes: willingness to sell,to what extent the landowners agree that owners would sell their land if offered a reasonable price
+KNOW_WOOD,ATT,Attitudes: knowledge of wooded land,to what extent the landowners agree that owners know their wooded very well
+WANT_KNOW_WOOD,ATT,Atttudes: desire to learn more,to what extent the landowners agree that owners want to know more about their wooded land
+EMO_WOOD,ATT,Attitudes: strong emotional attached,to what extent the landowners agree that owners have a strong emotional attachment to their land
+WOOD_COMMUNITY,ATT,Attitudes: benefits of wooded land,to what extent the landowners agree that owners believe their wooded land provides benefits to their community
+OWN1_AGE_CAT,DEMO,Landowner age,age of primary owner
+OWN1_GENDER,DEMO,Landowner gender,gender of primary owner
+OWN1_EDU,DEMO,Landowner education,highest degree or level of school of primary owner
+OWN1_ETH,DEMO,Landowner ethnicity,whether or not primary owner is of Hispanic of Latino origin
+OWN1_RACE_INDIAN,DEMO,Landowner race,race of primary owner
+OWN1_RACE_ASIAN,DEMO,Landowner race,race of primary owner
+OWN1_RACE_BLACK,DEMO,Landowner race,race of primary owner
+OWN1_RACE_HAWAIIAN,DEMO,Landowner race,race of primary owner
+OWN1_RACE_WHITE,DEMO,Landowner race,race of primary owner
+INC_WOOD_CAT,INC_WOOD_CAT,Income from wooded land,percentage of annual income is derived from forestland (primary owner)
