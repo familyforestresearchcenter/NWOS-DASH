@@ -4,7 +4,6 @@
 
 # Session Data files
 .RData
-.RDS
 
 # User-specific files
 .Ruserdata
@@ -20,9 +19,6 @@
 
 # RStudio files
 .Rproj.user/
-
-# RProject files
-.Rproj
 
 # produced vignettes
 vignettes/*.html
@@ -44,3 +40,10 @@ vignettes/*.pdf
 
 # SHINYAPPS connection directory
 /DEPLOY/rsconnect
+
+# Data files
+/*.RData
+/*.RDS
+
+# Project file
+NWOS-DASH.Rproj
