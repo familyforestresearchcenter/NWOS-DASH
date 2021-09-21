@@ -1,9 +1,0 @@
-rl <- rl[rl$VARIABLE %in% et$VARIABLE,]
-UK <- paste(rl$VARIABLE,rl$LEVEL)
-UK2 <- paste(et$VARIABLE,et$LEVEL)
-table(UK %in% UK2)
-rl <- rl[UK %in% UK2,]
-write.csv(rl,'REF_LABEL.csv',na="",row.names=F)
-
-rtz <- rtz[rtz$VARIABLE %in% et$VARIABLE,]
-write.csv(rtz,'REF_TABLE_VIZ.csv',na="",row.names=F)

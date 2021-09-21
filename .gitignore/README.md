@@ -1,3 +1,0 @@
-# NWOS-DASH
-
-NWOS Dashboard
