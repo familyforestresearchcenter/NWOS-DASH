@@ -23,6 +23,7 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
   tabPanel("Univariate Results",
   
     tags$head(
+       includeHTML(("google-analytics.html")),
        tags$style(type="text/css",
                 ".shiny-output-error { visibility: hidden; }",
                 ".shiny-output-error:before { visibility: hidden; }",
@@ -259,7 +260,7 @@ server <- function(input, output, session) {
       ets <- subset(ets, STATISTIC=='PERCENTAGE' & UNITS=='THOUSAND OWNERSHIPS')
     }
 	lv <- ets$LABEL[order(ets$ORDER)] #levels in order
-  ets$LABEL <- ordered(ets$LABEL,levels=lv)
+  ets$LABEL <- ordered(ets$LABEL,levels=lv,labels=lv)
   return(ets)
   }
   
