@@ -1,975 +1,526 @@
-VARIABLE,LEVEL,LABEL,ORDER
-ACRES_IN_STATE_CAT,1,1-9,1
-ACRES_IN_STATE_CAT,10,10-19,2
-ACRES_IN_STATE_CAT,20,20-49,3
-ACRES_IN_STATE_CAT,50,50-99,4
-ACRES_IN_STATE_CAT,100,100-199,5
-ACRES_IN_STATE_CAT,200,200-499,6
-ACRES_IN_STATE_CAT,500,500-999,7
-ACRES_IN_STATE_CAT,1000,"1,000-4,999",8
-ACRES_IN_STATE_CAT,5000,"5,000+",9
-ACQ_DEVELOPER,1,Land developer,3
-ACQ_TIMO,1,TIMO,4
-ACQ_FOREST_INDUSTRY,1,Forest products company,5
-ACQ_LOGGER,1,Logging contracter,6
-ACQ_GOV,1,Government,7
-ACQ_INDIVIDUAL,1,Other individual,2
-ACQ_SRC_OTHER,1,Other,8
-ACQ_FAMILY,1,Parents or other relatives,1
-ACQ_GIFTED,1,Gift,3
-ACQ_INHERITED,1,Inherited,2
-ACQ_TYPE_OTHER,1,Other,4
-ACQ_BOUGHT,1,Purchased,1
-SITE_PREP,1,Site preparation,1
-TREE_PLANTING,1,Planted trees,2
-FIRE_HAZARD_REDUCTION,1,Reduced fire hazard,3
-CHEMICAL_APPLICATION,1,Applied chemicals,4
-ROAD_MAINTENANCE,1,Built or maintained roads or trails,5
-WILDLIFE_HABITAT,1,Improved wildlife habitat,6
-ACTIVITY_POSTING,1,Posted land to restrict public access,7
-ACTIVITY_PRIV_REC,1,Recreation or hunting (private),8
-ACTIVITY_REC_PUBLIC,1,"Recreation or hunting (public, with permission)",9
-ACTIVITY_NONE,1,None,10
-ACTIVITY_OTHER,1,Other,11
-ADV_METH_CONF,1,Conference/workshop,6
-ADV_METH_NET,1,Internet,4
-ADV_METH_OTH,1,Other,7
-ADV_METH_TALK,-2,Not applicable,8
-ADV_METH_TALK,1,Talked to someone,1
-ADV_METH_VISIT,1,Site visit,2
-ADV_METH_WRIT,1,Written materials,3
-ADVICE_STATE_FORESTRY,1,Forestry commission forester,1
-ADVICE_EXTENSION,1,Extension forester,2
-ADVICE_STATE_OTHER,1,State (other),3
-ADVICE_NRCS,1,USDA employee,4
-ADVICE_FORESTER,1,Consulting forester,5
-ADVICE_FOREST_INDUSTRY,1,Forest products company,6
-ADVICE_LOGGER,1,Logging contracter,7
-ADVICE_NPO,1,Non-profit,8
-ADVICE_LANDOWNER,1,Other landowners,9
-ADVICE_UNKNOWN,1,Unknown,10
-ADVICE_OTHER,1,Other,11
-ADVICE_OTHER,-2,Not applicable,12
-ADV_TOP_CONS,1,Land conservation,4
-ADV_TOP_FIRE,1,Fire safety,5
-ADV_TOP_INS,-2,Not applicable,8
-ADV_TOP_INS,1,Unwanted insects/diseases,1
-ADV_TOP_OTH,1,Other,7
-ADV_TOP_TIM,1,Timber production,3
-ADV_TOP_WILD,1,Wildlife/habitat,2
-ADVICE,0,No,2
-ADVICE,1,Yes,1
-ATT_SELL,1,Strongly disagree,5
-ATT_SELL,2,Disagree,4
-ATT_SELL,3,Neither agree nor disagree,3
-ATT_SELL,4,Agree,2
-ATT_SELL,5,Strongly agree,1
-ATT_WOODED,1,Strongly disagree,5
-ATT_WOODED,2,Disagree,4
-ATT_WOODED,3,Neither agree nor disagree,3
-ATT_WOODED,4,Agree,2
-ATT_WOODED,5,Strongly agree,1
-SECONDARY_RESIDENCE_2,0,No,2
-SECONDARY_RESIDENCE_2,1,Yes,1
-CERTIFIED_LAND,0,No,2
-CERTIFIED_LAND,1,Yes,1
-CERTIFIED_LAND,-2,Not applicable,3
-CERTIFIED_KNOWLEDGE,0,No,2
-CERTIFIED_KNOWLEDGE,1,Yes,1
-CERTIFIED_FUTURE,-2,Not applicable,5
-CERTIFIED_FUTURE,0,No,2
-CERTIFIED_FUTURE,1,Yes,1
-CERTIFIED_FUTURE,2,Maybe,3
-CERTIFIED_FUTURE,3,Don't know,4
-CNC_AIR,1,No concern,5
-CNC_AIR,2,Of little concern,4
-CNC_AIR,3,Moderate concern,3
-CNC_AIR,4,Concern,2
-CNC_AIR,5,Great concern,1
-CNC_AIR,8,Not applicable,6
-CNC_ANIM,1,No concern,5
-CNC_ANIM,2,Of little concern,4
-CNC_ANIM,3,Moderate concern,3
-CNC_ANIM,4,Concern,2
-CNC_ANIM,5,Great concern,1
-CNC_ANIM,8,Not applicable,6
-CNC_CLIM,1,No concern,5
-CNC_CLIM,2,Of little concern,4
-CNC_CLIM,3,Moderate concern,3
-CNC_CLIM,4,Concern,2
-CNC_CLIM,5,Great concern,1
-CNC_CLIM,8,Not applicable,6
-CONCERN_DEVELOPMENT,1,1. Great Concern,1
-CONCERN_DEVELOPMENT,2,2,2
-CONCERN_DEVELOPMENT,3,3,3
-CONCERN_DEVELOPMENT,4,4,4
-CONCERN_DEVELOPMENT,5,5,5
-CONCERN_DEVELOPMENT,6,6,6
-CONCERN_DEVELOPMENT,7,7. No concern,7
-CONCERN_ENDANGERED_SPECIES,1,1. Great Concern,1
-CONCERN_ENDANGERED_SPECIES,2,2,2
-CONCERN_ENDANGERED_SPECIES,3,3,3
-CONCERN_ENDANGERED_SPECIES,4,4,4
-CONCERN_ENDANGERED_SPECIES,5,5,5
-CONCERN_ENDANGERED_SPECIES,6,6,6
-CONCERN_ENDANGERED_SPECIES,7,7. No concern,7
-CONCERN_MISUSE,1,1. Great Concern,1
-CONCERN_MISUSE,2,2,2
-CONCERN_MISUSE,3,3,3
-CONCERN_MISUSE,4,4,4
-CONCERN_MISUSE,5,5,5
-CONCERN_MISUSE,6,6,6
-CONCERN_MISUSE,7,7. No concern,7
-CNC_FIRE,1,No concern,5
-CNC_FIRE,2,Of little concern,4
-CNC_FIRE,3,Moderate concern,3
-CNC_FIRE,4,Concern,2
-CNC_FIRE,5,Great concern,1
-CNC_FIRE,8,No applicable,6
-CONCERN_HEIRS,1,1. Great Concern,1
-CONCERN_HEIRS,2,2,2
-CONCERN_HEIRS,3,3,3
-CONCERN_HEIRS,4,4,4
-CONCERN_HEIRS,5,5,5
-CONCERN_HEIRS,6,6,6
-CONCERN_HEIRS,7,7. No concern,7
-CONCERN_LAWSUITS,1,1. Great Concern,1
-CONCERN_LAWSUITS,2,2,2
-CONCERN_LAWSUITS,3,3,3
-CONCERN_LAWSUITS,4,4,4
-CONCERN_LAWSUITS,5,5,5
-CONCERN_LAWSUITS,6,6,6
-CONCERN_LAWSUITS,7,7. No concern,7
-CNC_INS,1,No concern,5
-CNC_INS,2,Of little concern,4
-CNC_INS,3,Moderate concern,3
-CNC_INS,4,Concern,2
-CNC_INS,5,Great concern,1
-CNC_INS,8,No applicable,6
-CNC_INVA,1,No concern,5
-CNC_INVA,2,Of little concern,4
-CNC_INVA,3,Moderate concern,3
-CNC_INVA,4,Concern,2
-CNC_INVA,5,Great concern,1
-CNC_INVA,8,Not applicable,6
-CONCERN_NOISE,1,1. Great Concern,1
-CONCERN_NOISE,2,2,2
-CONCERN_NOISE,3,3,3
-CONCERN_NOISE,4,4,4
-CONCERN_NOISE,5,5,5
-CONCERN_NOISE,6,6,6
-CONCERN_NOISE,7,7. No concern,7
-CONCERN_REGULATIONS,1,1. Great Concern,1
-CONCERN_REGULATIONS,2,2,2
-CONCERN_REGULATIONS,3,3,3
-CONCERN_REGULATIONS,4,4,4
-CONCERN_REGULATIONS,5,5,5
-CONCERN_REGULATIONS,6,6,6
-CONCERN_REGULATIONS,7,7. No concern,7
-CONCERN_STEALING,1,1. Great Concern,1
-CONCERN_STEALING,2,2,2
-CONCERN_STEALING,3,3,3
-CONCERN_STEALING,4,4,4
-CONCERN_STEALING,5,5,5
-CONCERN_STEALING,6,6,6
-CONCERN_STEALING,7,7. No concern,7
-CNC_OTH,1,No concern,5
-CNC_OTH,2,Of little concern,4
-CNC_OTH,3,Moderate concern,3
-CNC_OTH,4,Concern,2
-CNC_OTH,5,Great concern,1
-CNC_OTH,8,No applicable,6
-CNC_STORM,1,Not concern,5
-CNC_STORM,2,Of little concern,4
-CNC_STORM,3,Moderate concern,3
-CNC_STORM,4,Concern,2
-CNC_STORM,5,Great concern,1
-CNC_STORM,8,Not applicable,6
-CONCERN_TAXES,1,1. Great Concern,1
-CONCERN_TAXES,2,2,2
-CONCERN_TAXES,3,3,3
-CONCERN_TAXES,4,4,4
-CONCERN_TAXES,5,5,5
-CONCERN_TAXES,6,6,6
-CONCERN_TAXES,7,7. No concern,7
-CONCERN_TRESPASS,1,1. Great Concern,1
-CONCERN_TRESPASS,2,2,2
-CONCERN_TRESPASS,3,3,3
-CONCERN_TRESPASS,4,4,4
-CONCERN_TRESPASS,5,5,5
-CONCERN_TRESPASS,6,6,6
-CONCERN_TRESPASS,7,7. No concern,7
-CNC_WAT_LACK,1,No concern,5
-CNC_WAT_LACK,2,Of little concern,4
-CNC_WAT_LACK,3,Moderate concern,3
-CNC_WAT_LACK,4,Concern,2
-CNC_WAT_LACK,5,Great concern,1
-CNC_WAT_LACK,8,No applicable,6
-CNC_WAT_POL,1,No concern,5
-CNC_WAT_POL,2,Of little concern,4
-CNC_WAT_POL,3,Moderate concern,3
-CNC_WAT_POL,4,Concern,2
-CNC_WAT_POL,5,Great concern,1
-CNC_WAT_POL,8,Not applicable,6
-COST_SHARE,0,No,2
-COST_SHARE,1,Yes,1
-COST_SHARE_RECENT,0,No,2
-COST_SHARE_RECENT,1,Yes,1
-COST_SHARE_RECENT,2,Don't remember,3
-COST_SHARE_RECENT,-2,Not applicable,4
-COST_KNOW,1,Not at all familiar,5
-COST_KNOW,2,Slightly familiar,4
-COST_KNOW,3,Somewhat familiar,3
-COST_KNOW,4,Moderately familiar,2
-COST_KNOW,5,Extremely familiar,1
-TIMBER_HARVEST,0,No,2
-TIMBER_HARVEST,1,Yes,1
-CUT_FORESTER_2,-2,Not applicable,3
-CUT_FORESTER_2,0,No,2
-CUT_FORESTER_2,1,Yes,1
-CUT_LOGGER_2,-2,Not applicable,3
-CUT_LOGGER_2,0,No,2
-CUT_LOGGER_2,1,Yes,1
-CUT_LOG_SALE,1,Sale,1
-CUT_LOG_PERS,1,Personal use,2
-CUT_LOG_OTH,1,Other,3
-CUT_FIRE_SALE,1,Sale,1
-CUT_FIRE_PERS,1,Personal use,2
-CUT_FIRE_OTH,1,Other,3
-CUT_CHIP_SALE,1,Sale,1
-CUT_CHIP_PERS,1,Personal use,2
-CUT_CHIP_OTH,1,Other,3
-CUT_UNWAN_SALE,1,Sale,1
-CUT_UNWAN_PERS,1,Personal use,2
-CUT_UNWAN_OTH,1,Other,3
-CUT_OTH_SALE,1,Sale,1
-CUT_OTH_PERS,1,Personal use,2
-CUT_OTH_OTH,1,Other,3
-EASEMENT,0,No,2
-EASEMENT,1,Yes,1
-EASEMENT_FUTURE,-2,Not applicable,5
-EASEMENT_FUTURE,0,No,2
-EASEMENT_FUTURE,1,Yes,1
-EASEMENT_FUTURE,2,Maybe,3
-EASEMENT_FUTURE,3,Don't know,4
-EASE_5YR_2,-2,Not applicable,6
-EASE_5YR_2,1,Extremely unlikely,5
-EASE_5YR_2,2,Unlikely,4
-EASE_5YR_2,3,Undecided,3
-EASE_5YR_2,4,Likely,2
-EASE_5YR_2,5,Extremely likely,1
-EASE_KNOW,1,Not at all familiar,5
-EASE_KNOW,2,Slightly familiar,4
-EASE_KNOW,3,Somewhat familiar,3
-EASE_KNOW,4,Moderately familiar,2
-EASE_KNOW,5,Extremely familiar,1
-FARM_2,0,No,2
-FARM_2,1,Yes,1
-FARM,0,No,2
-FARM,1,Yes,1
-FUT_CONTROL_BURN,1,Extremely unlikely,1
-FUT_CONTROL_BURN,2,Unlikely,2
-FUT_CONTROL_BURN,3,Undecided,3
-FUT_CONTROL_BURN,4,Likely,4
-FUT_CONTROL_BURN,5,Extremely likely,5
-FUT_CUT_PERS,1,Extremely unlikely,1
-FUT_CUT_PERS,2,Unlikely,2
-FUT_CUT_PERS,3,Undecided,3
-FUT_CUT_PERS,4,Likely,4
-FUT_CUT_PERS,5,Extremely likely,5
-FUT_CUT_SALE,1,Extremely unlikely,1
-FUT_CUT_SALE,2,Unlikely,2
-FUT_CUT_SALE,3,Undecided,3
-FUT_CUT_SALE,4,Likely,4
-FUT_CUT_SALE,5,Extremely likely,5
-FUT_GRAZE,1,Extremely unlikely,1
-FUT_GRAZE,2,Unlikely,2
-FUT_GRAZE,3,Undecided,3
-FUT_GRAZE,4,Likely,4
-FUT_GRAZE,5,Extremely likely,5
-FUT_INS,1,Extremely unlikely,1
-FUT_INS,2,Unlikely,2
-FUT_INS,3,Undecided,3
-FUT_INS,4,Likely,4
-FUT_INS,5,Extremely likely,5
-FUT_INVA,1,Extremely unlikely,1
-FUT_INVA,2,Unlikely,2
-FUT_INVA,3,Undecided,3
-FUT_INVA,4,Likely,4
-FUT_INVA,5,Extremely likely,5
-FUT_NTFP,1,Extremely unlikely,1
-FUT_NTFP,2,Unlikely,2
-FUT_NTFP,3,Undecided,3
-FUT_NTFP,4,Likely,4
-FUT_NTFP,5,Extremely likely,5
-FUT_RED_FIRE,1,Extremely unlikely,1
-FUT_RED_FIRE,2,Unlikely,2
-FUT_RED_FIRE,3,Undecided,3
-FUT_RED_FIRE,4,Likely,4
-FUT_RED_FIRE,5,Extremely likely,5
-FUT_ROAD,1,Extremely unlikely,1
-FUT_ROAD,2,Unlikely,2
-FUT_ROAD,3,Undecided,3
-FUT_ROAD,4,Likely,4
-FUT_ROAD,5,Extremely likely,5
-FUT_TRAIL,1,Extremely unlikely,1
-FUT_TRAIL,2,Unlikely,2
-FUT_TRAIL,3,Undecided,3
-FUT_TRAIL,4,Likely,4
-FUT_TRAIL,5,Extremely likely,5
-FUT_WILD,1,Extremely unlikely,1
-FUT_WILD,2,Unlikely,2
-FUT_WILD,3,Undecided,3
-FUT_WILD,4,Likely,4
-FUT_WILD,5,Extremely likely,5
-FUTURE_AFFORESTATION,1,Afforest other land,11
-FUTURE_BUY,1,Buy woodland,9
-FUTURE_DEFORESTATION,1,Convert woodland,10
-FUTURE_FIREWOOD,1,Harvest firewood,3
-FUTURE_HEIRS,1,Transfer land to heirs,7
-FUTURE_MINIMAL,1,Minimal activity,2
-FUTURE_NO_ACTIVITY,1,No activity,1
-FUTURE_NO_PLANS,1,No plans,12
-FUTURE_NTFP,1,Collect NTFPs,5
-FUTURE_OTHER,1,Other,13
-FUTURE_SAWLOGS,1,Harvest sawlogs or pulpwood,4
-FUTURE_SELL,1,Sell some or all of woodland,6
-FUTURE_SUBDIVIDE,1,Subdivide woodland,7
-FUTURE_UNKNOWN,1,Unknown,14
-HELP_COST,1,Of no help,1
-HELP_COST,2,Of little help,2
-HELP_COST,3,Moderately helpful,3
-HELP_COST,4,Helpful,4
-HELP_COST,5,Very helpful,5
-HELP_COST,8,Not applicable,6
-HELP_COST,9,Don't know,7
-HELP_EASE,1,Of no help,1
-HELP_EASE,2,Of little help,2
-HELP_EASE,3,Moderately helpful,3
-HELP_EASE,4,Helpful,4
-HELP_EASE,5,Very helpful,5
-HELP_EASE,8,Not applicable,6
-HELP_EASE,9,Don't know,7
-HELP_OTH,1,Of no help,1
-HELP_OTH,2,Of little help,2
-HELP_OTH,3,Moderately helpful,3
-HELP_OTH,4,Helpful,4
-HELP_OTH,5,Very helpful,5
-HELP_OTH,8,Not applicable,6
-HELP_OTH,9,Don't know,7
-HELP_TAX,1,Of no help,1
-HELP_TAX,2,Of little help,2
-HELP_TAX,3,Moderately helpful,3
-HELP_TAX,4,Helpful,4
-HELP_TAX,5,Very helpful,5
-HELP_TAX,8,Not applicable,6
-HELP_TAX,9,Don't know,7
-HELP_TIM,1,Of no help,1
-HELP_TIM,2,Of little help,2
-HELP_TIM,3,Moderately helpful,3
-HELP_TIM,4,Helpful,4
-HELP_TIM,5,Very helpful,5
-HELP_TIM,8,Not applicable,6
-HELP_TIM,9,Don't know,7
-HELP_TRAN,1,Of no help,1
-HELP_TRAN,2,Of little help,2
-HELP_TRAN,3,Moderately helpful,3
-HELP_TRAN,4,Helpful,4
-HELP_TRAN,5,Very helpful,5
-HELP_TRAN,8,Not applicable,6
-HELP_TRAN,9,Don't know,7
-HELP_WOOD,1,Of no help,1
-HELP_WOOD,2,Of little help,2
-HELP_WOOD,3,Moderately helpful,3
-HELP_WOOD,4,Helpful,4
-HELP_WOOD,5,Very helpful,5
-HELP_WOOD,8,Not applicable,6
-HELP_WOOD,9,Don't know,7
-HELP_TYPE_CONF,1,Conference/workshop,7
-HELP_TYPE_NA,1,Don't want/need information,9
-HELP_TYPE_NET,1,Internet,5
-HELP_TYPE_OTH,1,Other,8
-HELP_TYPE_TALK,1,Talk to someone,1
-HELP_TYPE_VISIT,1,Site visit,3
-HELP_TYPE_WRIT,1,Written material,4
-PRIMARY_RESIDENCE_2,0,No,2
-PRIMARY_RESIDENCE_2,1,Yes,1
-INCOME,-2,Not applicable,6
-INCOME,100,"100,000 to 199,999",4
-INCOME,20,"Less than 25,000",1
-INCOME,200,"200,000 or more",5
-INCOME,25,"25,000 to 49,999",2
-INCOME,50,"50,000 to 99,999",3
-INC_WOOD_CAT,0,0,0
-INC_WOOD_CAT,1,1-4,1
-INC_WOOD_CAT,5,5-19,5
-INC_WOOD_CAT,20,20-49,20
-INC_WOOD_CAT,50,50+,50
-LEASED,0,No,2
-LEASED,1,Yes,1
-LEASE_RECENT,-2,Not applicable,4
-LEASE_RECENT,0,No,2
-LEASE_RECENT,1,Yes,1
-LEASE_RECENT,2,Don't remember,3
-LEASE_ACT_CONS,1,Land conservation,4
-LEASE_ACT_CARB,1,Carbon storage/sequestration,5
-LEASE_ACT_WAT,1,Public water supply protection,6
-LEASE_ACT_WILD,1,Wildlife habitat/biodiversity,7
-LEASE_ACT_GRAZE,1,Grazing,3
-LEASE_ACT_HUNT,-2,Not applicable,9
-LEASE_ACT_HUNT,1,Hunting,1
-LEASE_ACT_OTH,1,Other,8
-LEASE_ACT_REC,1,Recreation,2
-MAN_CHILD,1,Children,3
-MAN_FAM,1,Other family,5
-MAN_FORESTER,1,Forester,8
-MAN_OTH,1,Other,9
-MAN_OWN,1,Owner,1
-MAN_PARENT,1,Parent,4
-MAN_PARTNER,1,Business partner,6
-MAN_SPOUSE,1,Spouse,2
-MANAGEMENT_PLAN,0,No,2
-MANAGEMENT_PLAN,1,Yes,1
-MANAGEMENT_PLAN,2,Don't know,3
-MAN_PLAN_IMPLEMENT,-2,Not applicable,3
-MAN_PLAN_IMPLEMENT,0,No,2
-MAN_PLAN_IMPLEMENT,1,Yes,1
-MAN_PLAN_WRITER,-2,Not applicable,7
-MAN_PLAN_WRITER,1,Owner,1
-MAN_PLAN_WRITER,2,Forester - private consultant,2
-MAN_PLAN_WRITER,3,Forester - forest industry,3
-MAN_PLAN_WRITER,4,Forester - state,4
-MAN_PLAN_WRITER,5,Forester - federal,5
-MAN_PLAN_WRITER,6,Other,6
-MAN_PLAN_NO_NONEED,1,Don't want/need one,1
-MAN_PLAN_NO_NONEED,-2,Not applicable,6
-MAN_PLAN_NO_BUSY,1,Too busy,2
-MAN_PLAN_NO_EXPENSIVE,1,Too expensive,3
-MAN_PLAN_NO_COMPLEX,1,Too complicated,4
-MAN_PLAN_NO_OTH,1,Other,5
-NTFP_DECO_SALE,1,Sale,1
-NTFP_DECO_PERS,1,Personal use,2
-NTFP_EDIB_SALE,1,Sale,1
-NTFP_EDIB_PERS,1,Personal use,2
-NTFP_LAND_SALE,1,Sale,1
-NTFP_LAND_PERS,1,Personal use,2
-NTFP_MEDI_SALE,1,Sale,1
-NTFP_MEDI_PERS,1,Personal use,2
-NTFP_OTH_SALE,1,Sale,1
-NTFP_OTH_PERS,1,Personal use,2
-OBJ_BEA,1,Not important,5
-OBJ_BEA,2,Of little importance,4
-OBJ_BEA,3,Moderately important,3
-OBJ_BEA,4,Important,2
-OBJ_BEA,5,Very important,1
-OBJ_BEA,8,Not applicable,6
-OBJ_NAT,1,Not important,5
-OBJ_NAT,2,Of little importance,4
-OBJ_NAT,3,Moderately important,3
-OBJ_NAT,4,Important,2
-OBJ_NAT,5,Very important,1
-OBJ_NAT,8,Not applicable,6
-OBJ_WAT,1,Not important,5
-OBJ_WAT,2,Of little importance,4
-OBJ_WAT,3,Moderately important,3
-OBJ_WAT,4,Important,2
-OBJ_WAT,5,Very important,1
-OBJ_WAT,8,Not applicable,6
-OBJ_WIL,1,Not important,5
-OBJ_WIL,2,Of little importance,4
-OBJ_WIL,3,Moderately important,3
-OBJ_WIL,4,Important,2
-OBJ_WIL,5,Very important,1
-OBJ_WIL,8,Not applicable,6
-OBJ_INV,1,Not important,5
-OBJ_INV,2,Of little importance,4
-OBJ_INV,3,Moderately important,3
-OBJ_INV,4,Important,2
-OBJ_INV,5,Very important,1
-OBJ_INV,8,Not applicable,6
-OBJ_PRI,1,Not important,5
-OBJ_PRI,2,Of little importance,4
-OBJ_PRI,3,Moderately important,3
-OBJ_PRI,4,Important,2
-OBJ_PRI,5,Very important,1
-OBJ_PRI,8,Not applicable,6
-OBJ_FAM,1,Not important,5
-OBJ_FAM,2,Of little importance,4
-OBJ_FAM,3,Moderately important,3
-OBJ_FAM,4,Important,2
-OBJ_FAM,5,Very important,1
-OBJ_FAM,8,Not applicable,6
-OBJ_CHILD,1,Not important,5
-OBJ_CHILD,2,Of little importance,4
-OBJ_CHILD,3,Moderately important,3
-OBJ_CHILD,4,Important,2
-OBJ_CHILD,5,Very important,1
-OBJ_CHILD,8,Not applicable,6
-OBJ_FIRE,1,Not important,5
-OBJ_FIRE,2,Of little importance,4
-OBJ_FIRE,3,Moderately important,3
-OBJ_FIRE,4,Important,2
-OBJ_FIRE,5,Very important,1
-OBJ_FIRE,8,Not applicable,6
-OBJ_TIM,1,Not important,5
-OBJ_TIM,2,Of little importance,4
-OBJ_TIM,3,Moderately important,3
-OBJ_TIM,4,Important,2
-OBJ_TIM,5,Very important,1
-OBJ_TIM,8,Not applicable,6
-OBJ_REC,1,Not important,5
-OBJ_REC,2,Of little importance,4
-OBJ_REC,3,Moderately important,3
-OBJ_REC,4,Important,2
-OBJ_REC,5,Very important,1
-OBJ_REC,8,Not applicable,6
-OBJ_CAB,1,Not important,5
-OBJ_CAB,2,Of little importance,4
-OBJ_CAB,3,Moderately important,3
-OBJ_CAB,4,Important,2
-OBJ_CAB,5,Very important,1
-OBJ_CAB,8,Not applicable,6
-OBJ_FAR,1,Not important,5
-OBJ_FAR,2,Of little importance,4
-OBJ_FAR,3,Moderately important,3
-OBJ_FAR,4,Important,2
-OBJ_FAR,5,Very important,1
-OBJ_FAR,8,Not applicable,6
-OBJ_HOM,1,Not important,5
-OBJ_HOM,2,Of little importance,4
-OBJ_HOM,3,Moderately important,3
-OBJ_HOM,4,Important,2
-OBJ_HOM,5,Very important,1
-OBJ_HOM,8,Not applicable,6
-AGE,20,Under 25 years,1
-AGE,30,25 to 34,2
-AGE,40,35 to 44,3
-AGE,50,45 to 54,4
-AGE,60,55 to 64,5
-AGE,70,65 to 75,6
-AGE,80,75 years or older,7
-OWN1_AGE_CAT,18,<45,1
-OWN1_AGE_CAT,45,45-54,2
-OWN1_AGE_CAT,55,55-64,3
-OWN1_AGE_CAT,65,65-74,4
-OWN1_AGE_CAT,75,75+,5
-EDUCATION,1,Less than 12th grade,1
-EDUCATION,2,High school/GED,2
-EDUCATION,3,Some college,3
-EDUCATION,4,Associate degree,4
-EDUCATION,5,Bachelor's degree,5
-EDUCATION,6,Advanced degree,6
-HISPANIC,0,No,2
-HISPANIC,1,Yes,1
-RETIRED,0,No,2
-RETIRED,1,Yes,1
-GENDER,0,Female,1
-GENDER,1,Male,2
-GENDER,2,Unreported,3
-RACE_ASIAN,1,Asian,2
-RACE_BLACK,1,Black/African American,3
-RACE_HAWAIIAN,1,Native Hawaiian/ Other Islander,4
-RACE_INDIAN,1,American Indian or Alaska Native,1
-RACE_WHITE,1,White,5
-OWNERS_NUMBER_CAT,1,1,1
-OWNERS_NUMBER_CAT,2,2,2
-OWNERS_NUMBER_CAT,3,3-5,3
-OWNERS_NUMBER_CAT,6,6-10,6
-OWNERS_NUMBER_CAT,10,10+,10
-OWNTYPE,1,Individual,1
-OWNTYPE,2,Joint (with spouse),2
-OWNTYPE,3,Family partnership,3
-OWNTYPE,4,Trust or estate,4
-OWNTYPE,6,Other,6
-PARC_MULTI,0,No,2
-PARC_MULTI,1,Yes,1
-POST,0,No,2
-POST,1,Yes,1
-POST_RESTR_HUNT,1,Hunting,2
-POST_RESTR_OTH,1,Other,4
-POST_RESTR_TRES,-2,Not applicable,9
-POST_RESTR_TRES,1,Trespassing,1
-POST_RESTR_VEH,1,Motorized vehicles,3
-REC_HOW_BIKE,1,Biking,4
-REC_HOW_CAMP,1,Camping,5
-REC_HOW_FISH,1,Fishing,2
-REC_HOW_HIKE,1,Hiking/walking,3
-REC_HOW_HORSE,1,Horseback riding,6
-REC_HOW_HUNT,-2,Not applicable,10
-REC_HOW_HUNT,1,Hunting,1
-REC_HOW_OHV,1,Off-road vehicles,8
-REC_HOW_OTH,1,Other,9
-REC_HOW_SKI,1,Skiing/snowshoeing,7
-REC_WHO_CHILD,1,Children,2
-REC_WHO_FAM,1,Other family,3
-REC_WHO_FRND,1,Friends,4
-REC_WHO_NEIGH,1,Neighbors,5
-REC_WHO_NONE,1,Nobody,9
-REC_WHO_OTH,1,Other,8
-REC_WHO_OWN,1,Owner and/or spouse,1
-REC_WHO_PUB_FEE,1,General public (free),6
-REC_WHO_PUB_FREE,1,General public (for fee),7
-TAX,0,No,2
-TAX,1,Yes,1
-TAX,9,Don't know,3
-TAX_KNOW,1,Not at all familiar,5
-TAX_KNOW,2,Slightly familiar,4
-TAX_KNOW,3,Somewhat familiar,3
-TAX_KNOW,4,Moderately familiar,2
-TAX_KNOW,5,Extremely familiar,1
-TENURE_CAT,0,<10,0
-TENURE_CAT,10,10-24,10
-TENURE_CAT,25,25-49,25
-TENURE_CAT,50,50+,50
-TRAN,0,Never,1
-TRAN,1,Once,2
-TRAN,2,2-5 times,3
-TRAN,6,6 or more times,4
-TRAN_FUT,1,Extremely unlikely,5
-TRAN_FUT,2,Unlikely,4
-TRAN_FUT,3,Undecided,3
-TRAN_FUT,4,Likely,2
-TRAN_FUT,5,Extremely likely,1
-TRAN_FUT_TO_BUS,1,Business,4
-TRAN_FUT_TO_BUS,-2,Not applicable,8
-TRAN_FUT_TO_CHILD,1,Children,1
-TRAN_FUT_TO_DONTKNOW,1,Don't know,7
-TRAN_FUT_TO_FAM,1,Other family,2
-TRAN_FUT_TO_GOV,1,Government agency,5
-TRAN_FUT_TO_INDIV,1,Other individual,3
-TRAN_FUT_TO_OTH,1,Other,6
-TRAN_FUT_WHY_READY,1,Ready to give it away,1
-TRAN_FUT_WHY_READY,-2,Not applicable,8
-TRAN_FUT_WHY_COST,1,Too expensive,2
-TRAN_FUT_WHY_MONEY,1,Needs the money,3
-TRAN_FUT_WHY_MARKET,1,High market value,4
-TRAN_FUT_WHY_NOINTEREST,1,No longer interested in owning it,5
-TRAN_FUT_WHY_INV,1,Part of an investment strategy,6
-TRAN_FUT_WHY_OTH,1,Other,7
-TRN_RECENT,-2,Not applicable,3
-TRN_RECENT,0,No,2
-TRN_RECENT,1,Yes,1
-TRAN_TO_BUS,1,Business,4
-TRAN_TO_CHILD,1,Children,1
-TRAN_TO_FAM,1,Other family,2
-TRAN_TO_GOV,1,Government,5
-TRAN_TO_INDIV,1,Other individual,3
-TRAN_TO_OTH,1,Other,6
-TRAN_TO_CHILD,-2,Not applicable,7
-DISABILITY_BLIND,0,No,2
-DISABILITY_BLIND,1,Yes,1
-DISABILITY_MOBILITY,0,No,2
-DISABILITY_MOBILITY,1,Yes,1
-HEALTH_AIR,1,1. Great Concern,1
-HEALTH_AIR,2,2,2
-HEALTH_AIR,3,3,3
-HEALTH_AIR,4,4,4
-HEALTH_AIR,5,5,5
-HEALTH_AIR,6,6,6
-HEALTH_AIR,7,7. No concern,7
-HEALTH_DOMESTIC_ANIMALS,1,1. Great Concern,1
-HEALTH_DOMESTIC_ANIMALS,2,2,2
-HEALTH_DOMESTIC_ANIMALS,3,3,3
-HEALTH_DOMESTIC_ANIMALS,4,4,4
-HEALTH_DOMESTIC_ANIMALS,5,5,5
-HEALTH_DOMESTIC_ANIMALS,6,6,6
-HEALTH_DOMESTIC_ANIMALS,7,7. No concern,7
-HEALTH_EXOTICS,1,1. Great Concern,1
-HEALTH_EXOTICS,2,2,2
-HEALTH_EXOTICS,3,3,3
-HEALTH_EXOTICS,4,4,4
-HEALTH_EXOTICS,5,5,5
-HEALTH_EXOTICS,6,6,6
-HEALTH_EXOTICS,7,7. No concern,7
-HEALTH_FIRE,1,1. Great Concern,1
-HEALTH_FIRE,2,2,2
-HEALTH_FIRE,3,3,3
-HEALTH_FIRE,4,4,4
-HEALTH_FIRE,5,5,5
-HEALTH_FIRE,6,6,6
-HEALTH_FIRE,7,7. No concern,7
-HEALTH_INSECTS,1,1. Great Concern,1
-HEALTH_INSECTS,2,2,2
-HEALTH_INSECTS,3,3,3
-HEALTH_INSECTS,4,4,4
-HEALTH_INSECTS,5,5,5
-HEALTH_INSECTS,6,6,6
-HEALTH_INSECTS,7,7. No concern,7
-HEALTH_REGENERATION,1,1. Great Concern,1
-HEALTH_REGENERATION,2,2,2
-HEALTH_REGENERATION,3,3,3
-HEALTH_REGENERATION,4,4,4
-HEALTH_REGENERATION,5,5,5
-HEALTH_REGENERATION,6,6,6
-HEALTH_REGENERATION,7,7. No concern,7
-HEALTH_STORMS,1,1. Great Concern,1
-HEALTH_STORMS,2,2,2
-HEALTH_STORMS,3,3,3
-HEALTH_STORMS,4,4,4
-HEALTH_STORMS,5,5,5
-HEALTH_STORMS,6,6,6
-HEALTH_STORMS,7,7. No concern,7
-HEALTH_WILD_ANIMALS,1,1. Great Concern,1
-HEALTH_WILD_ANIMALS,2,2,2
-HEALTH_WILD_ANIMALS,3,3,3
-HEALTH_WILD_ANIMALS,4,4,4
-HEALTH_WILD_ANIMALS,5,5,5
-HEALTH_WILD_ANIMALS,6,6,6
-HEALTH_WILD_ANIMALS,7,7. No concern,7
-HRV_CONSULT,-2,Not applicable,4
-HRV_CONSULT,0,No,2
-HRV_CONSULT,1,Yes,1
-HRV_CONSULT,2,Don't remember,3
-HRV_RECENT,-2,Not applicable,4
-HRV_RECENT,0,No,2
-HRV_RECENT,1,Yes,1
-HRV_RECENT,2,Don't remember,3
-HRV_SAW,-2,Not applicable,7
-HRV_SAW,1,Sawlogs,1
-HRV_PULP,1,Pulpwood,2
-HRV_FIRE,1,Firewood,3
-HRV_VENEER,1,Veneer,4
-HRV_POSTS,1,Posts,5
-HRV_OTHER,1,Other,6
-HRV_CLEAR,-2,Not applicable,12
-HRV_CLEAR,1,Clear land,3
-HRV_HUNT,1,Improve hunting,7
-HRV_MATURE,1,Timber was mature,2
-HRV_MONEY,1,Needed money,4
-HRV_PLAN,1,Following management plan,1
-HRV_PRICE,1,Good timber prices,6
-HRV_REASON_OTHER,1,Other,11
-HRV_RECREATE,1,Improve scenery and recreation,8
-HRV_REMAINING_TREES,1,Stand improvement,10
-HRV_SALVAGE,1,Salvage harvest,9
-HRV_USE,1,Wood for personal use,5
-LEARN_CONFERENCES,1,1. Very useful,1
-LEARN_CONFERENCES,2,2,2
-LEARN_CONFERENCES,3,3,3
-LEARN_CONFERENCES,4,4,4
-LEARN_CONFERENCES,5,5,5
-LEARN_CONFERENCES,6,6,6
-LEARN_CONFERENCES,7,7. Not useful,7
-LEARN_CONFERENCES,9,Don't know,8
-LEARN_FORESTER,1,1. Very useful,1
-LEARN_FORESTER,2,2,2
-LEARN_FORESTER,3,3,3
-LEARN_FORESTER,4,4,4
-LEARN_FORESTER,5,5,5
-LEARN_FORESTER,6,6,6
-LEARN_FORESTER,7,7. Not useful,7
-LEARN_FORESTER,9,Don't know,8
-LEARN_INTERNET,1,1. Very useful,1
-LEARN_INTERNET,2,2,2
-LEARN_INTERNET,3,3,3
-LEARN_INTERNET,4,4,4
-LEARN_INTERNET,5,5,5
-LEARN_INTERNET,6,6,6
-LEARN_INTERNET,7,7. Not useful,7
-LEARN_INTERNET,9,Don't know,8
-LEARN_LOGGER,1,1. Very useful,1
-LEARN_LOGGER,2,2,2
-LEARN_LOGGER,3,3,3
-LEARN_LOGGER,4,4,4
-LEARN_LOGGER,5,5,5
-LEARN_LOGGER,6,6,6
-LEARN_LOGGER,7,7. Not useful,7
-LEARN_LOGGER,9,Don't know,8
-LEARN_MEMBERSHIP,1,1. Very useful,1
-LEARN_MEMBERSHIP,2,2,2
-LEARN_MEMBERSHIP,3,3,3
-LEARN_MEMBERSHIP,4,4,4
-LEARN_MEMBERSHIP,5,5,5
-LEARN_MEMBERSHIP,6,6,6
-LEARN_MEMBERSHIP,7,7. Not useful,7
-LEARN_MEMBERSHIP,9,Don't know,8
-LEARN_NEWSLETTERS,1,1. Very useful,1
-LEARN_NEWSLETTERS,2,2,2
-LEARN_NEWSLETTERS,3,3,3
-LEARN_NEWSLETTERS,4,4,4
-LEARN_NEWSLETTERS,5,5,5
-LEARN_NEWSLETTERS,6,6,6
-LEARN_NEWSLETTERS,7,7. Not useful,7
-LEARN_NEWSLETTERS,9,Don't know,8
-LEARN_OWNER,1,1. Very useful,1
-LEARN_OWNER,2,2,2
-LEARN_OWNER,3,3,3
-LEARN_OWNER,4,4,4
-LEARN_OWNER,5,5,5
-LEARN_OWNER,6,6,6
-LEARN_OWNER,7,7. Not useful,7
-LEARN_OWNER,9,Don't know,8
-LEARN_PUBS,1,1. Very useful,1
-LEARN_PUBS,2,2,2
-LEARN_PUBS,3,3,3
-LEARN_PUBS,4,4,4
-LEARN_PUBS,5,5,5
-LEARN_PUBS,6,6,6
-LEARN_PUBS,7,7. Not useful,7
-LEARN_PUBS,9,Don't know,8
-LEARN_TV,1,1. Very useful,1
-LEARN_TV,2,2,2
-LEARN_TV,3,3,3
-LEARN_TV,4,4,4
-LEARN_TV,5,5,5
-LEARN_TV,6,6,6
-LEARN_TV,7,7. Not useful,7
-LEARN_TV,9,Don't know,8
-LEARN_VIDEOS,1,1. Very useful,1
-LEARN_VIDEOS,2,2,2
-LEARN_VIDEOS,3,3,3
-LEARN_VIDEOS,4,4,4
-LEARN_VIDEOS,5,5,5
-LEARN_VIDEOS,6,6,6
-LEARN_VIDEOS,7,7. Not useful,7
-LEARN_VIDEOS,9,Don't know,8
-LEARN_VISITING,1,1. Very useful,1
-LEARN_VISITING,2,2,2
-LEARN_VISITING,3,3,3
-LEARN_VISITING,4,4,4
-LEARN_VISITING,5,5,5
-LEARN_VISITING,6,6,6
-LEARN_VISITING,7,7. Not useful,7
-LEARN_VISITING,9,Don't know,8
-LEASE_GRAZE_2,-2,Not applicable,7
-LEASE_GRAZE_2,1,Grazing livestock,3
-LEASE_HUNT_2,1,Hunting,1
-LEASE_NTFP_2,1,Collect NTFPs,5
-LEASE_RECREATE_2,1,Recreation (other than hunting),2
-LEASE_TIMBER_2,1,Timber production,4
-LEASE_OTHER_2,1,Other,6
-MANAGER_OWNER,1,Owner and/or spouse,1
-MANAGER_FAMILY,1,Family,2
-MANAGER_FORESTER,1,Forester,3
-MANAGER_LOGGER,1,Logger,4
-MANAGER_PARTNER,1,Business partner,5
-MANAGER_LEASEE,1,Leasees,6
-MANAGER_OTHER,1,Other,7
-NTFP_COLLECT,0,No,2
-NTFP_COLLECT,1,Yes,1
-NTFP_EDIBLE,-2,Not applicable,6
-NTFP_EDIBLE,1,Edibles,1
-NTFP_MEDICINAL,1,Medicinals,2
-NTFP_DECORATIVE,1,Decorative,3
-NTFP_CULTURAL,1,Cultural or religious products,4
-NTFP_OTHER,1,Other,5
-NTFP_SALE,-2,Not applicable,3
-NTFP_SALE,1,For sale,1
-NTFP_PERSONAL,1,For personal use,2
-NTFP_RECENT,-2,Not applicable,4
-NTFP_RECENT,0,No,2
-NTFP_RECENT,1,Yes,1
-NTFP_RECENT,2,Don't remember,3
-OBJ_AESTHETICS,1,1. Very important,1
-OBJ_AESTHETICS,2,2,2
-OBJ_AESTHETICS,3,3,3
-OBJ_AESTHETICS,4,4,4
-OBJ_AESTHETICS,5,5,5
-OBJ_AESTHETICS,6,6,6
-OBJ_AESTHETICS,7,7. Not important,7
-OBJ_BIODIVERSITY,1,1. Very important,1
-OBJ_BIODIVERSITY,2,2,2
-OBJ_BIODIVERSITY,3,3,3
-OBJ_BIODIVERSITY,4,4,4
-OBJ_BIODIVERSITY,5,5,5
-OBJ_BIODIVERSITY,6,6,6
-OBJ_BIODIVERSITY,7,7. Not important,7
-OBJ_FARM,1,1. Very important,1
-OBJ_FARM,2,2,2
-OBJ_FARM,3,3,3
-OBJ_FARM,4,4,4
-OBJ_FARM,5,5,5
-OBJ_FARM,6,6,6
-OBJ_FARM,7,7. Not important,7
-OBJ_FIREWOOD,1,1. Very important,1
-OBJ_FIREWOOD,2,2,2
-OBJ_FIREWOOD,3,3,3
-OBJ_FIREWOOD,4,4,4
-OBJ_FIREWOOD,5,5,5
-OBJ_FIREWOOD,6,6,6
-OBJ_FIREWOOD,7,7. Not important,7
-OBJ_HOME,1,1. Very important,1
-OBJ_HOME,2,2,2
-OBJ_HOME,3,3,3
-OBJ_HOME,4,4,4
-OBJ_HOME,5,5,5
-OBJ_HOME,6,6,6
-OBJ_HOME,7,7. Not important,7
-OBJ_HUNT,1,1. Very important,1
-OBJ_HUNT,2,2,2
-OBJ_HUNT,3,3,3
-OBJ_HUNT,4,4,4
-OBJ_HUNT,5,5,5
-OBJ_HUNT,6,6,6
-OBJ_HUNT,7,7. Not important,7
-OBJ_INVEST,1,1. Very important,1
-OBJ_INVEST,2,2,2
-OBJ_INVEST,3,3,3
-OBJ_INVEST,4,4,4
-OBJ_INVEST,5,5,5
-OBJ_INVEST,6,6,6
-OBJ_INVEST,7,7. Not important,7
-OBJ_LEGACY,1,1. Very important,1
-OBJ_LEGACY,2,2,2
-OBJ_LEGACY,3,3,3
-OBJ_LEGACY,4,4,4
-OBJ_LEGACY,5,5,5
-OBJ_LEGACY,6,6,6
-OBJ_LEGACY,7,7. Not important,7
-OBJ_NTFP,1,1. Very important,1
-OBJ_NTFP,2,2,2
-OBJ_NTFP,3,3,3
-OBJ_NTFP,4,4,4
-OBJ_NTFP,5,5,5
-OBJ_NTFP,6,6,6
-OBJ_NTFP,7,7. Not important,7
-OBJ_PRIVACY,1,1. Very important,1
-OBJ_PRIVACY,2,2,2
-OBJ_PRIVACY,3,3,3
-OBJ_PRIVACY,4,4,4
-OBJ_PRIVACY,5,5,5
-OBJ_PRIVACY,6,6,6
-OBJ_PRIVACY,7,7. Not important,7
-OBJ_RECREATE,1,1. Very important,1
-OBJ_RECREATE,2,2,2
-OBJ_RECREATE,3,3,3
-OBJ_RECREATE,4,4,4
-OBJ_RECREATE,5,5,5
-OBJ_RECREATE,6,6,6
-OBJ_RECREATE,7,7. Not important,7
-OBJ_TIMBER,1,1. Very important,1
-OBJ_TIMBER,2,2,2
-OBJ_TIMBER,3,3,3
-OBJ_TIMBER,4,4,4
-OBJ_TIMBER,5,5,5
-OBJ_TIMBER,6,6,6
-OBJ_TIMBER,7,7. Not important,7
-OWNER_INDIV_JOINT,1,Individual or joint,1
-OWNER_BIZ_PARTNER,1,Business partnership,6
-OWNER_CLUB,1,Club or association,9
-OWNER_FAM_PARTNER,1,Family partnership or corporation,2
-OWNER_FMC,1,Forest management company,4
-OWNER_FOREST_INDUSTRY,1,Forest industry,5
-OWNER_NPO,1,Nonprofit organization,8
-OWNER_OTHER_CORP,1,Corporation,7
-OWNER_TIMO,1,Timber investment management organization,3
-OWNER_TRUST,1,Trust or estate,10
-OWNER_OTHER,1,Other,11
-RESTRICT_LAND_USE,-2,Not applicable,4
-RESTRICT_LAND_USE,1,Land use conversion,1
-RESTRICT_SUBDIVISION,1,Subdivision,2
-RESTRICT_HARVESTING,1,Timber harvesting,3
-RESTRICT_OTHER,1,Other,4
-TRANSFER,0,Never,1
-TRANSFER,1,Once,2
-TRANSFER,2,2 to 5 times,3
-TRANSFER,6,6 or more times,4
-TRN_DEVELOPER,-2,Not applicable,9
-TRN_DEVELOPER,1,Land developer,3
-TRN_FAMILY,1,Children / family,1
-TRN_FOREST_INDUSTRY,1,Forest industry,5
-TRN_GOV,1,Government,7
-TRN_INDIVIDUAL,1,Other individual(s),2
-TRN_LOGGER,1,Logger,6
-TRN_TIMO,1,Timber management investment organization,4
-TRN_OTHER,1,Other,8
+"VARIABLE","LEVEL","LABEL","ORDER"
+"ACQ_BOUGHT",1,"Purchased",1
+"ACQ_DEVELOPER",1,"Land developer",3
+"ACQ_FAMILY",1,"Parents or other relatives",1
+"ACQ_FOREST_INDUSTRY",1,"Forest products company",5
+"ACQ_GIFTED",1,"Gift",3
+"ACQ_GOV",1,"Government",7
+"ACQ_INDIVIDUAL",1,"Other individual",2
+"ACQ_INHERITED",1,"Inherited",2
+"ACQ_LOGGER",1,"Logging contracter",6
+"ACQ_SRC_OTHER",1,"Other",8
+"ACQ_TIMO",1,"TIMO",4
+"ACQ_TYPE_OTHER",1,"Other",4
+"ACRES_IN_STATE_CAT",1,"1-9",1
+"ACRES_IN_STATE_CAT",10,"10-19",2
+"ACRES_IN_STATE_CAT",20,"20-49",3
+"ACRES_IN_STATE_CAT",50,"50-99",4
+"ACRES_IN_STATE_CAT",100,"100-199",5
+"ACRES_IN_STATE_CAT",200,"200-499",6
+"ACRES_IN_STATE_CAT",500,"500-999",7
+"ACRES_IN_STATE_CAT",1000,"1,000-4,999",8
+"ACRES_IN_STATE_CAT",5000,"5,000+",9
+"ACTIVITY_NONE",1,"None",10
+"ACTIVITY_OTHER",1,"Other",11
+"ACTIVITY_POSTING",1,"Posted land to restrict public access",7
+"ACTIVITY_PRIV_REC",1,"Recreation or hunting (private)",8
+"ACTIVITY_REC_PUBLIC",1,"Recreation or hunting (public, with permission)",9
+"ADVICE",0,"No",2
+"ADVICE",1,"Yes",1
+"ADVICE_EXTENSION",1,"Extension forester",2
+"ADVICE_FOREST_INDUSTRY",1,"Forest products company",6
+"ADVICE_FORESTER",1,"Consulting forester",5
+"ADVICE_LANDOWNER",1,"Other landowners",9
+"ADVICE_LOGGER",1,"Logging contracter",7
+"ADVICE_NPO",1,"Non-profit",8
+"ADVICE_NRCS",1,"USDA employee",4
+"ADVICE_OTHER",-2,"Not applicable",12
+"ADVICE_OTHER",1,"Other",11
+"ADVICE_STATE_FORESTRY",1,"Forestry commission forester",1
+"ADVICE_STATE_OTHER",1,"State (other)",3
+"ADVICE_UNKNOWN",1,"Unknown",10
+"AGE",20,"Under 25 years",1
+"AGE",30,"25 to 34",2
+"AGE",40,"35 to 44",3
+"AGE",50,"45 to 54",4
+"AGE",60,"55 to 64",5
+"AGE",70,"65 to 75",6
+"AGE",80,"75 years or older",7
+"CERTIFIED_FUTURE",-2,"Not applicable",5
+"CERTIFIED_FUTURE",0,"No",2
+"CERTIFIED_FUTURE",1,"Yes",1
+"CERTIFIED_FUTURE",2,"Maybe",3
+"CERTIFIED_FUTURE",3,"Don't know",4
+"CERTIFIED_KNOWLEDGE",0,"No",2
+"CERTIFIED_KNOWLEDGE",1,"Yes",1
+"CERTIFIED_LAND",-2,"Not applicable",3
+"CERTIFIED_LAND",0,"No",2
+"CERTIFIED_LAND",1,"Yes",1
+"CHEMICAL_APPLICATION",1,"Applied chemicals",4
+"CONCERN_DEVELOPMENT",1,"1. Great Concern",1
+"CONCERN_DEVELOPMENT",2,"2",2
+"CONCERN_DEVELOPMENT",3,"3",3
+"CONCERN_DEVELOPMENT",4,"4",4
+"CONCERN_DEVELOPMENT",5,"5",5
+"CONCERN_DEVELOPMENT",6,"6",6
+"CONCERN_DEVELOPMENT",7,"7. No concern",7
+"CONCERN_ENDANGERED_SPECIES",1,"1. Great Concern",1
+"CONCERN_ENDANGERED_SPECIES",2,"2",2
+"CONCERN_ENDANGERED_SPECIES",3,"3",3
+"CONCERN_ENDANGERED_SPECIES",4,"4",4
+"CONCERN_ENDANGERED_SPECIES",5,"5",5
+"CONCERN_ENDANGERED_SPECIES",6,"6",6
+"CONCERN_ENDANGERED_SPECIES",7,"7. No concern",7
+"CONCERN_HEIRS",1,"1. Great Concern",1
+"CONCERN_HEIRS",2,"2",2
+"CONCERN_HEIRS",3,"3",3
+"CONCERN_HEIRS",4,"4",4
+"CONCERN_HEIRS",5,"5",5
+"CONCERN_HEIRS",6,"6",6
+"CONCERN_HEIRS",7,"7. No concern",7
+"CONCERN_LAWSUITS",1,"1. Great Concern",1
+"CONCERN_LAWSUITS",2,"2",2
+"CONCERN_LAWSUITS",3,"3",3
+"CONCERN_LAWSUITS",4,"4",4
+"CONCERN_LAWSUITS",5,"5",5
+"CONCERN_LAWSUITS",6,"6",6
+"CONCERN_LAWSUITS",7,"7. No concern",7
+"CONCERN_MISUSE",1,"1. Great Concern",1
+"CONCERN_MISUSE",2,"2",2
+"CONCERN_MISUSE",3,"3",3
+"CONCERN_MISUSE",4,"4",4
+"CONCERN_MISUSE",5,"5",5
+"CONCERN_MISUSE",6,"6",6
+"CONCERN_MISUSE",7,"7. No concern",7
+"CONCERN_NOISE",1,"1. Great Concern",1
+"CONCERN_NOISE",2,"2",2
+"CONCERN_NOISE",3,"3",3
+"CONCERN_NOISE",4,"4",4
+"CONCERN_NOISE",5,"5",5
+"CONCERN_NOISE",6,"6",6
+"CONCERN_NOISE",7,"7. No concern",7
+"CONCERN_REGULATIONS",1,"1. Great Concern",1
+"CONCERN_REGULATIONS",2,"2",2
+"CONCERN_REGULATIONS",3,"3",3
+"CONCERN_REGULATIONS",4,"4",4
+"CONCERN_REGULATIONS",5,"5",5
+"CONCERN_REGULATIONS",6,"6",6
+"CONCERN_REGULATIONS",7,"7. No concern",7
+"CONCERN_STEALING",1,"1. Great Concern",1
+"CONCERN_STEALING",2,"2",2
+"CONCERN_STEALING",3,"3",3
+"CONCERN_STEALING",4,"4",4
+"CONCERN_STEALING",5,"5",5
+"CONCERN_STEALING",6,"6",6
+"CONCERN_STEALING",7,"7. No concern",7
+"CONCERN_TAXES",1,"1. Great Concern",1
+"CONCERN_TAXES",2,"2",2
+"CONCERN_TAXES",3,"3",3
+"CONCERN_TAXES",4,"4",4
+"CONCERN_TAXES",5,"5",5
+"CONCERN_TAXES",6,"6",6
+"CONCERN_TAXES",7,"7. No concern",7
+"CONCERN_TRESPASS",1,"1. Great Concern",1
+"CONCERN_TRESPASS",2,"2",2
+"CONCERN_TRESPASS",3,"3",3
+"CONCERN_TRESPASS",4,"4",4
+"CONCERN_TRESPASS",5,"5",5
+"CONCERN_TRESPASS",6,"6",6
+"CONCERN_TRESPASS",7,"7. No concern",7
+"COST_SHARE",0,"No",2
+"COST_SHARE",1,"Yes",1
+"COST_SHARE_RECENT",-2,"Not applicable",4
+"COST_SHARE_RECENT",0,"No",2
+"COST_SHARE_RECENT",1,"Yes",1
+"COST_SHARE_RECENT",2,"Don't remember",3
+"DISABILITY_BLIND",0,"No",2
+"DISABILITY_BLIND",1,"Yes",1
+"DISABILITY_MOBILITY",0,"No",2
+"DISABILITY_MOBILITY",1,"Yes",1
+"EASEMENT",0,"No",2
+"EASEMENT",1,"Yes",1
+"EASEMENT_FUTURE",-2,"Not applicable",5
+"EASEMENT_FUTURE",0,"No",2
+"EASEMENT_FUTURE",1,"Yes",1
+"EASEMENT_FUTURE",2,"Maybe",3
+"EASEMENT_FUTURE",3,"Don't know",4
+"EDUCATION",1,"Less than 12th grade",1
+"EDUCATION",2,"High school/GED",2
+"EDUCATION",3,"Some college",3
+"EDUCATION",4,"Associate degree",4
+"EDUCATION",5,"Bachelor's degree",5
+"EDUCATION",6,"Advanced degree",6
+"FARM",0,"No",2
+"FARM",1,"Yes",1
+"FIRE_HAZARD_REDUCTION",1,"Reduced fire hazard",3
+"FUTURE_AFFORESTATION",1,"Afforest other land",11
+"FUTURE_BUY",1,"Buy woodland",9
+"FUTURE_DEFORESTATION",1,"Convert woodland",10
+"FUTURE_FIREWOOD",1,"Harvest firewood",3
+"FUTURE_HEIRS",1,"Transfer land to heirs",7
+"FUTURE_MINIMAL",1,"Minimal activity",2
+"FUTURE_NO_ACTIVITY",1,"No activity",1
+"FUTURE_NO_PLANS",1,"No plans",12
+"FUTURE_NTFP",1,"Collect NTFPs",5
+"FUTURE_OTHER",1,"Other",13
+"FUTURE_SAWLOGS",1,"Harvest sawlogs or pulpwood",4
+"FUTURE_SELL",1,"Sell some or all of woodland",6
+"FUTURE_SUBDIVIDE",1,"Subdivide woodland",7
+"FUTURE_UNKNOWN",1,"Unknown",14
+"GENDER",0,"Female",1
+"GENDER",1,"Male",2
+"GENDER",2,"Unreported",3
+"HEALTH_AIR",1,"1. Great Concern",1
+"HEALTH_AIR",2,"2",2
+"HEALTH_AIR",3,"3",3
+"HEALTH_AIR",4,"4",4
+"HEALTH_AIR",5,"5",5
+"HEALTH_AIR",6,"6",6
+"HEALTH_AIR",7,"7. No concern",7
+"HEALTH_DOMESTIC_ANIMALS",1,"1. Great Concern",1
+"HEALTH_DOMESTIC_ANIMALS",2,"2",2
+"HEALTH_DOMESTIC_ANIMALS",3,"3",3
+"HEALTH_DOMESTIC_ANIMALS",4,"4",4
+"HEALTH_DOMESTIC_ANIMALS",5,"5",5
+"HEALTH_DOMESTIC_ANIMALS",6,"6",6
+"HEALTH_DOMESTIC_ANIMALS",7,"7. No concern",7
+"HEALTH_EXOTICS",1,"1. Great Concern",1
+"HEALTH_EXOTICS",2,"2",2
+"HEALTH_EXOTICS",3,"3",3
+"HEALTH_EXOTICS",4,"4",4
+"HEALTH_EXOTICS",5,"5",5
+"HEALTH_EXOTICS",6,"6",6
+"HEALTH_EXOTICS",7,"7. No concern",7
+"HEALTH_FIRE",1,"1. Great Concern",1
+"HEALTH_FIRE",2,"2",2
+"HEALTH_FIRE",3,"3",3
+"HEALTH_FIRE",4,"4",4
+"HEALTH_FIRE",5,"5",5
+"HEALTH_FIRE",6,"6",6
+"HEALTH_FIRE",7,"7. No concern",7
+"HEALTH_INSECTS",1,"1. Great Concern",1
+"HEALTH_INSECTS",2,"2",2
+"HEALTH_INSECTS",3,"3",3
+"HEALTH_INSECTS",4,"4",4
+"HEALTH_INSECTS",5,"5",5
+"HEALTH_INSECTS",6,"6",6
+"HEALTH_INSECTS",7,"7. No concern",7
+"HEALTH_REGENERATION",1,"1. Great Concern",1
+"HEALTH_REGENERATION",2,"2",2
+"HEALTH_REGENERATION",3,"3",3
+"HEALTH_REGENERATION",4,"4",4
+"HEALTH_REGENERATION",5,"5",5
+"HEALTH_REGENERATION",6,"6",6
+"HEALTH_REGENERATION",7,"7. No concern",7
+"HEALTH_STORMS",1,"1. Great Concern",1
+"HEALTH_STORMS",2,"2",2
+"HEALTH_STORMS",3,"3",3
+"HEALTH_STORMS",4,"4",4
+"HEALTH_STORMS",5,"5",5
+"HEALTH_STORMS",6,"6",6
+"HEALTH_STORMS",7,"7. No concern",7
+"HEALTH_WILD_ANIMALS",1,"1. Great Concern",1
+"HEALTH_WILD_ANIMALS",2,"2",2
+"HEALTH_WILD_ANIMALS",3,"3",3
+"HEALTH_WILD_ANIMALS",4,"4",4
+"HEALTH_WILD_ANIMALS",5,"5",5
+"HEALTH_WILD_ANIMALS",6,"6",6
+"HEALTH_WILD_ANIMALS",7,"7. No concern",7
+"HISPANIC",0,"No",2
+"HISPANIC",1,"Yes",1
+"HRV_CLEAR",-2,"Not applicable",12
+"HRV_CLEAR",1,"Clear land",3
+"HRV_CONSULT",-2,"Not applicable",4
+"HRV_CONSULT",0,"No",2
+"HRV_CONSULT",1,"Yes",1
+"HRV_CONSULT",2,"Don't remember",3
+"HRV_FIRE",1,"Firewood",3
+"HRV_HUNT",1,"Improve hunting",7
+"HRV_MATURE",1,"Timber was mature",2
+"HRV_MONEY",1,"Needed money",4
+"HRV_OTHER",1,"Other",6
+"HRV_PLAN",1,"Following management plan",1
+"HRV_POSTS",1,"Posts",5
+"HRV_PRICE",1,"Good timber prices",6
+"HRV_PULP",1,"Pulpwood",2
+"HRV_REASON_OTHER",1,"Other",11
+"HRV_RECENT",-2,"Not applicable",4
+"HRV_RECENT",0,"No",2
+"HRV_RECENT",1,"Yes",1
+"HRV_RECENT",2,"Don't remember",3
+"HRV_RECREATE",1,"Improve scenery and recreation",8
+"HRV_REMAINING_TREES",1,"Stand improvement",10
+"HRV_SALVAGE",1,"Salvage harvest",9
+"HRV_SAW",-2,"Not applicable",7
+"HRV_SAW",1,"Sawlogs",1
+"HRV_USE",1,"Wood for personal use",5
+"HRV_VENEER",1,"Veneer",4
+"INCOME",-2,"Not applicable",6
+"INCOME",20,"Less than 25,000",1
+"INCOME",25,"25,000 to 49,999",2
+"INCOME",50,"50,000 to 99,999",3
+"INCOME",100,"100,000 to 199,999",4
+"INCOME",200,"200,000 or more",5
+"LEARN_CONFERENCES",1,"1. Very useful",1
+"LEARN_CONFERENCES",2,"2",2
+"LEARN_CONFERENCES",3,"3",3
+"LEARN_CONFERENCES",4,"4",4
+"LEARN_CONFERENCES",5,"5",5
+"LEARN_CONFERENCES",6,"6",6
+"LEARN_CONFERENCES",7,"7. Not useful",7
+"LEARN_CONFERENCES",9,"Don't know",8
+"LEARN_FORESTER",1,"1. Very useful",1
+"LEARN_FORESTER",2,"2",2
+"LEARN_FORESTER",3,"3",3
+"LEARN_FORESTER",4,"4",4
+"LEARN_FORESTER",5,"5",5
+"LEARN_FORESTER",6,"6",6
+"LEARN_FORESTER",7,"7. Not useful",7
+"LEARN_FORESTER",9,"Don't know",8
+"LEARN_INTERNET",1,"1. Very useful",1
+"LEARN_INTERNET",2,"2",2
+"LEARN_INTERNET",3,"3",3
+"LEARN_INTERNET",4,"4",4
+"LEARN_INTERNET",5,"5",5
+"LEARN_INTERNET",6,"6",6
+"LEARN_INTERNET",7,"7. Not useful",7
+"LEARN_INTERNET",9,"Don't know",8
+"LEARN_LOGGER",1,"1. Very useful",1
+"LEARN_LOGGER",2,"2",2
+"LEARN_LOGGER",3,"3",3
+"LEARN_LOGGER",4,"4",4
+"LEARN_LOGGER",5,"5",5
+"LEARN_LOGGER",6,"6",6
+"LEARN_LOGGER",7,"7. Not useful",7
+"LEARN_LOGGER",9,"Don't know",8
+"LEARN_MEMBERSHIP",1,"1. Very useful",1
+"LEARN_MEMBERSHIP",2,"2",2
+"LEARN_MEMBERSHIP",3,"3",3
+"LEARN_MEMBERSHIP",4,"4",4
+"LEARN_MEMBERSHIP",5,"5",5
+"LEARN_MEMBERSHIP",6,"6",6
+"LEARN_MEMBERSHIP",7,"7. Not useful",7
+"LEARN_MEMBERSHIP",9,"Don't know",8
+"LEARN_NEWSLETTERS",1,"1. Very useful",1
+"LEARN_NEWSLETTERS",2,"2",2
+"LEARN_NEWSLETTERS",3,"3",3
+"LEARN_NEWSLETTERS",4,"4",4
+"LEARN_NEWSLETTERS",5,"5",5
+"LEARN_NEWSLETTERS",6,"6",6
+"LEARN_NEWSLETTERS",7,"7. Not useful",7
+"LEARN_NEWSLETTERS",9,"Don't know",8
+"LEARN_OWNER",1,"1. Very useful",1
+"LEARN_OWNER",2,"2",2
+"LEARN_OWNER",3,"3",3
+"LEARN_OWNER",4,"4",4
+"LEARN_OWNER",5,"5",5
+"LEARN_OWNER",6,"6",6
+"LEARN_OWNER",7,"7. Not useful",7
+"LEARN_OWNER",9,"Don't know",8
+"LEARN_PUBS",1,"1. Very useful",1
+"LEARN_PUBS",2,"2",2
+"LEARN_PUBS",3,"3",3
+"LEARN_PUBS",4,"4",4
+"LEARN_PUBS",5,"5",5
+"LEARN_PUBS",6,"6",6
+"LEARN_PUBS",7,"7. Not useful",7
+"LEARN_PUBS",9,"Don't know",8
+"LEARN_TV",1,"1. Very useful",1
+"LEARN_TV",2,"2",2
+"LEARN_TV",3,"3",3
+"LEARN_TV",4,"4",4
+"LEARN_TV",5,"5",5
+"LEARN_TV",6,"6",6
+"LEARN_TV",7,"7. Not useful",7
+"LEARN_TV",9,"Don't know",8
+"LEARN_VIDEOS",1,"1. Very useful",1
+"LEARN_VIDEOS",2,"2",2
+"LEARN_VIDEOS",3,"3",3
+"LEARN_VIDEOS",4,"4",4
+"LEARN_VIDEOS",5,"5",5
+"LEARN_VIDEOS",6,"6",6
+"LEARN_VIDEOS",7,"7. Not useful",7
+"LEARN_VIDEOS",9,"Don't know",8
+"LEARN_VISITING",1,"1. Very useful",1
+"LEARN_VISITING",2,"2",2
+"LEARN_VISITING",3,"3",3
+"LEARN_VISITING",4,"4",4
+"LEARN_VISITING",5,"5",5
+"LEARN_VISITING",6,"6",6
+"LEARN_VISITING",7,"7. Not useful",7
+"LEARN_VISITING",9,"Don't know",8
+"LEASE_GRAZE_2",-2,"Not applicable",7
+"LEASE_GRAZE_2",1,"Grazing livestock",3
+"LEASE_HUNT_2",1,"Hunting",1
+"LEASE_NTFP_2",1,"Collect NTFPs",5
+"LEASE_OTHER_2",1,"Other",6
+"LEASE_RECENT",-2,"Not applicable",4
+"LEASE_RECENT",0,"No",2
+"LEASE_RECENT",1,"Yes",1
+"LEASE_RECENT",2,"Don't remember",3
+"LEASE_RECREATE_2",1,"Recreation (other than hunting)",2
+"LEASE_TIMBER_2",1,"Timber production",4
+"LEASED",0,"No",2
+"LEASED",1,"Yes",1
+"MANAGEMENT_PLAN",0,"No",2
+"MANAGEMENT_PLAN",1,"Yes",1
+"MANAGEMENT_PLAN",2,"Don't know",3
+"MANAGER_FAMILY",1,"Family",2
+"MANAGER_FORESTER",1,"Forester",3
+"MANAGER_LEASEE",1,"Leasees",6
+"MANAGER_LOGGER",1,"Logger",4
+"MANAGER_OTHER",1,"Other",7
+"MANAGER_OWNER",1,"Owner and/or spouse",1
+"MANAGER_PARTNER",1,"Business partner",5
+"NTFP_COLLECT",0,"No",2
+"NTFP_COLLECT",1,"Yes",1
+"NTFP_CULTURAL",1,"Cultural or religious products",4
+"NTFP_DECORATIVE",1,"Decorative",3
+"NTFP_EDIBLE",-2,"Not applicable",6
+"NTFP_EDIBLE",1,"Edibles",1
+"NTFP_MEDICINAL",1,"Medicinals",2
+"NTFP_OTHER",1,"Other",5
+"NTFP_PERSONAL",1,"For personal use",2
+"NTFP_RECENT",-2,"Not applicable",4
+"NTFP_RECENT",0,"No",2
+"NTFP_RECENT",1,"Yes",1
+"NTFP_RECENT",2,"Don't remember",3
+"NTFP_SALE",-2,"Not applicable",3
+"NTFP_SALE",1,"For sale",1
+"OBJ_AESTHETICS",1,"1. Very important",1
+"OBJ_AESTHETICS",2,"2",2
+"OBJ_AESTHETICS",3,"3",3
+"OBJ_AESTHETICS",4,"4",4
+"OBJ_AESTHETICS",5,"5",5
+"OBJ_AESTHETICS",6,"6",6
+"OBJ_AESTHETICS",7,"7. Not important",7
+"OBJ_BIODIVERSITY",1,"1. Very important",1
+"OBJ_BIODIVERSITY",2,"2",2
+"OBJ_BIODIVERSITY",3,"3",3
+"OBJ_BIODIVERSITY",4,"4",4
+"OBJ_BIODIVERSITY",5,"5",5
+"OBJ_BIODIVERSITY",6,"6",6
+"OBJ_BIODIVERSITY",7,"7. Not important",7
+"OBJ_FARM",1,"1. Very important",1
+"OBJ_FARM",2,"2",2
+"OBJ_FARM",3,"3",3
+"OBJ_FARM",4,"4",4
+"OBJ_FARM",5,"5",5
+"OBJ_FARM",6,"6",6
+"OBJ_FARM",7,"7. Not important",7
+"OBJ_FIREWOOD",1,"1. Very important",1
+"OBJ_FIREWOOD",2,"2",2
+"OBJ_FIREWOOD",3,"3",3
+"OBJ_FIREWOOD",4,"4",4
+"OBJ_FIREWOOD",5,"5",5
+"OBJ_FIREWOOD",6,"6",6
+"OBJ_FIREWOOD",7,"7. Not important",7
+"OBJ_HOME",1,"1. Very important",1
+"OBJ_HOME",2,"2",2
+"OBJ_HOME",3,"3",3
+"OBJ_HOME",4,"4",4
+"OBJ_HOME",5,"5",5
+"OBJ_HOME",6,"6",6
+"OBJ_HOME",7,"7. Not important",7
+"OBJ_HUNT",1,"1. Very important",1
+"OBJ_HUNT",2,"2",2
+"OBJ_HUNT",3,"3",3
+"OBJ_HUNT",4,"4",4
+"OBJ_HUNT",5,"5",5
+"OBJ_HUNT",6,"6",6
+"OBJ_HUNT",7,"7. Not important",7
+"OBJ_INVEST",1,"1. Very important",1
+"OBJ_INVEST",2,"2",2
+"OBJ_INVEST",3,"3",3
+"OBJ_INVEST",4,"4",4
+"OBJ_INVEST",5,"5",5
+"OBJ_INVEST",6,"6",6
+"OBJ_INVEST",7,"7. Not important",7
+"OBJ_LEGACY",1,"1. Very important",1
+"OBJ_LEGACY",2,"2",2
+"OBJ_LEGACY",3,"3",3
+"OBJ_LEGACY",4,"4",4
+"OBJ_LEGACY",5,"5",5
+"OBJ_LEGACY",6,"6",6
+"OBJ_LEGACY",7,"7. Not important",7
+"OBJ_NTFP",1,"1. Very important",1
+"OBJ_NTFP",2,"2",2
+"OBJ_NTFP",3,"3",3
+"OBJ_NTFP",4,"4",4
+"OBJ_NTFP",5,"5",5
+"OBJ_NTFP",6,"6",6
+"OBJ_NTFP",7,"7. Not important",7
+"OBJ_PRIVACY",1,"1. Very important",1
+"OBJ_PRIVACY",2,"2",2
+"OBJ_PRIVACY",3,"3",3
+"OBJ_PRIVACY",4,"4",4
+"OBJ_PRIVACY",5,"5",5
+"OBJ_PRIVACY",6,"6",6
+"OBJ_PRIVACY",7,"7. Not important",7
+"OBJ_RECREATE",1,"1. Very important",1
+"OBJ_RECREATE",2,"2",2
+"OBJ_RECREATE",3,"3",3
+"OBJ_RECREATE",4,"4",4
+"OBJ_RECREATE",5,"5",5
+"OBJ_RECREATE",6,"6",6
+"OBJ_RECREATE",7,"7. Not important",7
+"OBJ_TIMBER",1,"1. Very important",1
+"OBJ_TIMBER",2,"2",2
+"OBJ_TIMBER",3,"3",3
+"OBJ_TIMBER",4,"4",4
+"OBJ_TIMBER",5,"5",5
+"OBJ_TIMBER",6,"6",6
+"OBJ_TIMBER",7,"7. Not important",7
+"OWNER_BIZ_PARTNER",1,"Business partnership",6
+"OWNER_CLUB",1,"Club or association",9
+"OWNER_FAM_PARTNER",1,"Family partnership or corporation",2
+"OWNER_FMC",1,"Forest management company",4
+"OWNER_FOREST_INDUSTRY",1,"Forest industry",5
+"OWNER_INDIV_JOINT",1,"Individual or joint",1
+"OWNER_NPO",1,"Nonprofit organization",8
+"OWNER_OTHER",1,"Other",11
+"OWNER_OTHER_CORP",1,"Corporation",7
+"OWNER_TIMO",1,"Timber investment management organization",3
+"OWNER_TRUST",1,"Trust or estate",10
+"PRIMARY_RESIDENCE_2",0,"No",2
+"PRIMARY_RESIDENCE_2",1,"Yes",1
+"RACE_ASIAN",1,"Asian",2
+"RACE_BLACK",1,"Black/African American",3
+"RACE_HAWAIIAN",1,"Native Hawaiian/ Other Islander",4
+"RACE_INDIAN",1,"American Indian or Alaska Native",1
+"RACE_WHITE",1,"White",5
+"RESTRICT_HARVESTING",1,"Timber harvesting",3
+"RESTRICT_LAND_USE",-2,"Not applicable",4
+"RESTRICT_LAND_USE",1,"Land use conversion",1
+"RESTRICT_OTHER",1,"Other",4
+"RESTRICT_SUBDIVISION",1,"Subdivision",2
+"RETIRED",0,"No",2
+"RETIRED",1,"Yes",1
+"ROAD_MAINTENANCE",1,"Built or maintained roads or trails",5
+"SECONDARY_RESIDENCE_2",0,"No",2
+"SECONDARY_RESIDENCE_2",1,"Yes",1
+"SITE_PREP",1,"Site preparation",1
+"TENURE_CAT",0,"<10",0
+"TENURE_CAT",10,"10-24",10
+"TENURE_CAT",25,"25-49",25
+"TENURE_CAT",50,"50+",50
+"TIMBER_HARVEST",0,"No",2
+"TIMBER_HARVEST",1,"Yes",1
+"TRANSFER",0,"Never",1
+"TRANSFER",1,"Once",2
+"TRANSFER",2,"2 to 5 times",3
+"TRANSFER",6,"6 or more times",4
+"TREE_PLANTING",1,"Planted trees",2
+"TRN_DEVELOPER",-2,"Not applicable",9
+"TRN_DEVELOPER",1,"Land developer",3
+"TRN_FAMILY",1,"Children / family",1
+"TRN_FOREST_INDUSTRY",1,"Forest industry",5
+"TRN_GOV",1,"Government",7
+"TRN_INDIVIDUAL",1,"Other individual(s)",2
+"TRN_LOGGER",1,"Logger",6
+"TRN_OTHER",1,"Other",8
+"TRN_RECENT",-2,"Not applicable",3
+"TRN_RECENT",0,"No",2
+"TRN_RECENT",1,"Yes",1
+"TRN_TIMO",1,"Timber management investment organization",4
+"WILDLIFE_HABITAT",1,"Improved wildlife habitat",6
