@@ -3,6 +3,7 @@ UK <- paste(rl$VARIABLE,rl$LEVEL)
 UK2 <- paste(et$VARIABLE,et$LEVEL)
 table(UK %in% UK2)
 rl <- rl[UK %in% UK2,]
+rl <- rl[order(rl$VARIABLE,rl$LEVEL),]
 write.csv(rl,'REF_LABEL.csv',na="",row.names=F)
 
 rtz <- rtz[rtz$VARIABLE %in% et$VARIABLE,]

@@ -145,7 +145,8 @@ TREE_PLANTING,ACT,Past management activites,past (previous 5 years) management a
 FIRE_HAZARD_REDUCTION,ACT,Past management activites,past (previous 5 years) management activities
 CHEMICAL_APPLICATION,ACT,Past management activites,past (previous 5 years) management activities
 ROAD_MAINTENANCE,ACT,Past management activites,past (previous 5 years) management activities
-SITE_PREP,ACT,Past management activites,past (previous 5 years) management activities
+,,,
+,,,
 WILDLIFE_HABITAT,ACT,Past management activites,past (previous 5 years) management activities
 ACTIVITY_POSTING,ACT,Past management activites,past (previous 5 years) management activities
 ACTIVITY_PRIV_REC,ACT,Past management activites,past (previous 5 years) management activities
