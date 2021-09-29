@@ -170,9 +170,9 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
 
 server <- function(input, output, session) {
   
-  #make sure LEVEL always corresponds with TABLE (mapping tab)
-  observeEvent(tm(),{
-    updateSelectInput(session,"l","Level",unique(et$LABEL[et$TABLE==tm()]))
+  #make sure LEVEL always corresponds with TABLE and CYCLE (mapping tab)
+  observeEvent(tmym(),{
+    updateSelectInput(session,"l","Level",unique(et$LABEL[et$TABLE==tm()&et$YEAR==ym()]))
   })
   
   #make sure DOMAIN always corresponds with STATE
@@ -188,6 +188,10 @@ server <- function(input, output, session) {
     updateSelectInput(session,"tm","Variable",unique(et$TABLE[et$YEAR==ym()]), selected="Ownership type")
   })
   
+  #make sure DOWNLOAD ALL geographies always corresponds with year
+  observeEvent(yall(),{
+    updateSelectInput(session,"sall","State",c('All Geographies',unique(et$STATE[et$YEAR==yall()])), selected="All Geographies")
+  })
   
   #selects desired table
   t <- reactive({
@@ -242,6 +246,16 @@ server <- function(input, output, session) {
   })
   ym <- reactive({
     input$ym
+  })
+  
+  #combination of year and table (mapping tap)
+  tmym <- reactive({
+    list(input$tm,input$ym)
+  })
+  
+  #year on ABOUT tab
+  yall <- reactive({
+    input$yall
   })
   
   #function to subset et based on choices, main tab
@@ -373,7 +387,8 @@ server <- function(input, output, session) {
   #creates function to make table
   maketable <- function() {
     
-    ets <- subets() #subset et  
+    ets <- subets() #subset et
+    ets
     
     #prints table
     if (nrow(ets)>0){
@@ -406,8 +421,8 @@ server <- function(input, output, session) {
                 1:8*((max(nonull)-min(nonull))/9)+
                   min(nonull),
                 ceiling(max(nonull)))
-      bins <- unique(bins) #unique bins
       bins <- round(bins)
+      bins <- unique(bins) #unique bins
     } else {
       bins <- 0 #if there are no values in bin, create one
     }
