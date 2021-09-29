@@ -96,12 +96,12 @@ et$UNITS[et$STATISTIC=='N'] <- NA #no units for sample size
 et$STATISTIC[et$STATISTIC=='PROPORTION'] <- 'PERCENTAGE' #proportions are percentages
 
 #reduce to those with adequate sample size
-ssz <- et[et$STATISTIC=='N' & et$VARIABLE=='AC_WOOD_CAT',] #just sample size
+ssz <- et[et$STATISTIC=='N' & et$VARIABLE=='ACRES_IN_STATE_CAT',] #just sample size
 ssz <- aggregate(VALUE~GEO_ABB+DOMAIN,data=ssz,FUN='sum')
 ssz <- ssz[ssz$VALUE>=50,] #arbitrary cutoff, to retain in dashboard
 table(ssz$DOMAIN) #geographies in dashboard by domain
 
-#column identifying whether to include NWOS-DASH
+#column identifying whether to include in NWOS-DASH
 et$INC <- ifelse(paste(et$GEO_ABB,et$DOMAIN) %in% 
                    paste(ssz$GEO_ABB,ssz$DOMAIN),1,0)
 
@@ -111,6 +111,7 @@ save(list=c("et"),file="INPUTS/BASE_2006_FFO/BASE_2006_FFO_DATA.RData")
 #combine with existing estimates table
 et.2006 <- et #rename
 load("DEPLOY/NWOS_dashboard_DATA.RData") #load old
+et <- et[et$YEAR!='2006',] #remove any pre-existing 2006 records
 et <- rbind(et,et.2006) #combine
 
 #save estimates table (w/ metadata) and states layer in DEPLOY folder
