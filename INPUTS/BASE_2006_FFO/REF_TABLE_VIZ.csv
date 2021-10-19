@@ -1,5 +1,4 @@
 "VARIABLE","ï..TABLE","DROPDOWN","DESCRIPTION"
-"TOTAL","TOTAL","Total area and number of ownerships","family forest ownerships"
 "ACRES_IN_STATE_CAT","SIZE","Size of forest holdings","size of forest holdings in acres"
 "OWNER_INDIV_JOINT","OWNTYPE","Ownership type","ownership type"
 "OWNER_BIZ_PARTNER","OWNTYPE","Ownership type","ownership type"
@@ -185,3 +184,4 @@
 "RACE_WHITE","DEMO","Landowner race","race of primary owner"
 "DISABILITY_BLIND","DEMO","Landowner disability: blindness / deafness","whether or not primary owner has long-last blindness, deafness, or a severe vision or hearing impairment"
 "DISABILITY_MOBILITY","DEMO","Landowner disability: mobility","whether or not primary owner has a long-lasting condition that substantially limits mobility"
+"TOTAL","TOTAL","Total","population"

@@ -601,3 +601,4 @@ TRAN_TO_GOV,1,Government,5
 TRAN_TO_INDIV,1,Other individual,3
 TRAN_TO_OTH,1,Other,6
 TRAN_TO_CHILD,-2,Not applicable,7
+TOTAL,1,FFOs,1
