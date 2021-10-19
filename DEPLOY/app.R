@@ -426,7 +426,8 @@ server <- function(input, output, session) {
     } else {
       bins <- 0 #if there are no values in bin, create one
     }
-    if (all(bins==0)){bins <- c(0:1)} #make sure at least 1 bin 
+    if (all(bins==0)){bins <- c(0:1)} #1 bin for zeros
+    if (all(bins==100)){bins <- c(100:101)} #1 bin for hundreds 
     pal <- colorBin("YlOrRd", domain = states$VALUE, bins = bins)
     
     #create labels

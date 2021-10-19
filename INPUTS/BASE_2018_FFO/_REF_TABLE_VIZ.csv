@@ -1,5 +1,4 @@
 VARIABLE,ï..TABLE,DROPDOWN,DESCRIPTION
-TOTAL,TOTAL,Total area and number of ownerships,family forest ownerships
 AC_LAND_CAT,SIZE,Size of land holdings,size of land holdings in acres
 AC_WOOD_CAT,SIZE,Size of forest holdings,size of forest holdings in acres
 PARC_MULTI,SIZE,Multiple forested parcels,whether owners own multiple forested parcels
@@ -225,3 +224,4 @@ OWN1_RACE_BLACK,DEMO,Landowner race,race of primary owner
 OWN1_RACE_HAWAIIAN,DEMO,Landowner race,race of primary owner
 OWN1_RACE_WHITE,DEMO,Landowner race,race of primary owner
 INC_WOOD_CAT,INC_WOOD_CAT,Income from wooded land,percentage of annual income is derived from forestland (primary owner)
+TOTAL,TOTAL,Total,population
