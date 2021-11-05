@@ -13,7 +13,8 @@ options(stringsAsFactors = FALSE)
 
 #loads formatted estimates and reference tables
 load("NWOS_dashboard_DATA.RData")
-et <- et[et$INC==1,] #constrain
+et <- et[et$INC==1,] #constrain to those that should be included (n=50+)
+et$STRATUM <- ordered(et$STRATUM,levels=c('FFO','SCORP'),labels=c('Family','Small corporate'))
 
 ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department of Agriculture logo",height=42),"National Woodland Owner Survey Dashboard (NWOS-DASH)"),
                  windowTitle="NWOS-DASH",
@@ -38,7 +39,7 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
       
       sidebarPanel(
         
-        selectInput("t", "Variable", unique(et$TABLE), selected="Ownership type"),
+        selectInput("t", "Variable", unique(et$TABLE), selected="Size of forest holdings"),
         
         selectInput("u", "Unit", c('Acres','Ownerships','Percent of Acres','Percent of Ownerships')),
         
@@ -79,7 +80,7 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
                
                sidebarPanel(
                  
-                 selectInput("tm", "Variable", unique(et$TABLE), selected="Ownership type"),
+                 selectInput("tm", "Variable", unique(et$TABLE), selected="Size of forest holdings"),
                  
                  selectInput("l", "Level", unique(et$LABEL)),
                  
@@ -87,7 +88,7 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
 
                  selectInput("pm", "Population", unique(et$STRATUM)),
                  
-                 selectInput("dm", "Domain (acres)", c('10+','100+')),
+                 selectInput("dm", "Domain (acres)", unique(et$DOMAIN), selected="10+"),
                  
                  selectInput("ym", "NWOS Cycle", unique(et$YEAR)),
                  
@@ -116,7 +117,6 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
                       HTML("<p lang='en'><h4>Getting started with NWOS-DASH</h4></p>
                       <p lang='en'>NWOS-DASH is the official data visualization and retrieval tool for the USDA Forest Service's National Woodland Owner Survey (NWOS). Here you can obtain population-level estimates of landowners' objectives, activities, demographics and more &mdash; summarized by state or region. For all variables, you can view output in terms of the number or percentage of either acres or ownerships. For example, you can view the total number of ownerships that have a management plan or the percentage of acres owned by people who have harvested timber in the past five years. In addition, you can filter by domain, which is defined as the minimum size of forest holdings owned by an ownership for inclusion in a population-level estimate. For example, you can view the number of ownerships owning 10 or more acres who have a management plan, or the number of ownerships owning 100 or more acres who have harvested timber. The smallest domain that meets the Forest Service definition of 'Forest' is 1+ acres.</p>
                       <p lang='en'>The <b>Univariate Results</b> tab on the navigation bar allows a number of options for summarizing individual variables. You begin by selecting the variable, statistical unit, state/region, population, domain, and survey year from the selection menu. An interactive plot based on your custom selection will be generated. By mousing over the bars, you will be able to see exact values. Buttons on the top allow you to zoom, change axes and other plot attributes, and finally to export the plot as a PNG file. Within this pane, the TABLE and PLOT tabs allow you to toggle between the plot view and an interactive table view. You can also download the underlying data as CSV or JSON using the buttons on the bottom of the selection menu.</p>
-                      <p lang='en'>The data on the Univariate Results tab correspond to tables that are published in official USDA publications. Underneath each plot/table is listed the full citation for the data. Additional information about methods, terminology, and results for the corresponding study can be found in the cited publication. In general, weighting and imputation procedures are used to derive all population-level estimates. More information on these methodologies is provided in the listed publication.</p>
                       <p lang='en'>The <b>Mapped Results</b> tab provides the same data as the Univariate Results tab, but displayed on an interactive map of the United States. Instead of choosing an individual state/region and variable and seeing data for all levels of that variable, here you choose a specific level of a variable (e.g. 'Individual' as one level of 'Ownership type') and a chloropleth map is generated. This map is interactive; you can zoom, pan, and mouse over states to see exact values and error terms. Variables, levels, populations, and domains are restricted to those that are available at the level of individual states.</p>
 					            <p lang='en'>The <b>Help/Glossary</b> tab contains definitions for a short list of technical terms.</p>
                       <p lang='en'>The <b>About</b> tab contains more information on the NWOS, including links and citations. You can also download the complete dataset for a survey year and/or geography.</p>
@@ -128,7 +128,9 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
 					<ul lang='en'>
 					<li><b>Domain</b>: The minimum size of forest holdings that an ownership must own in order to be included in a population-level estimate.</li>
 					<li><b>Forest</b>: Forest or woodland, defined as \"land that has at least 10 percent crown cover by live tally trees of any size or has had at least 10 percent canopy cover of live tally species in the past, based on the presence of stumps, snags, or other evidence. To qualify, the area must be at least 1.0 acre in size and 120.0 feet wide\".</li>
-					<li><b>FFO</b>: Family Forest Ownership, an ownership composed of individuals, families, and trusts that owns 1+ acres of forested land.</li>
+					<li><b>FFO/Family</b>: Family forest ownership, an ownership composed of individuals, families, and trusts that owns 1+ acres of forested land.</li>
+					<li><b>Small corporate</b>: Small corporate ownership, which may include clubs, associations, conservation groups, other NGOs, and corporations or businesses owning <i>less</i> than 45 thousand acres nationwide.</li>
+					<li><b>Large corporate</b>: Large corporate ownership, corporations or businesses owning <i>more</i> than 45 thousand acres nationwide. Study of large corporate ownerships is still in a pilot phase and therefore not yet included in NWOS-DASH. An early analysis of large corporate ownerships is included in <a href='https://www.nrs.fs.fed.us/pubs/62485' target='_blank'>this article (opens in new window)</a>.</li>
 					<li><b>LLC</b>: Limited Liability Company.</li>
 					<li><b>LLP</b>: Limited Liability Partnership.</li>
 					</ul>"))),
@@ -180,12 +182,33 @@ server <- function(input, output, session) {
     updateSelectInput(session,"d","Domain (acres)",unique(et$DOMAIN[et$STATE==s()]), selected="10+")
   })
   
+  #make sure VARIABLE always corresponds with STRATUM
+  observeEvent(p(),{
+    updateSelectInput(session,"t","Variable",unique(et$TABLE[et$STRATUM==p()]), selected="Size of forest holdings")
+  })
+  observeEvent(pm(),{
+    updateSelectInput(session,"tm","Variable",unique(et$TABLE[et$STRATUM==pm()]), selected="Size of forest holdings")
+  })
+  
   #make sure VARIABLE always corresponds with YEAR
   observeEvent(y(),{
-    updateSelectInput(session,"t","Variable",unique(et$TABLE[et$YEAR==y()]), selected="Ownership type")
+    updateSelectInput(session,"t","Variable",unique(et$TABLE[et$YEAR==y()]), selected="Size of forest holdings")
   })
   observeEvent(ym(),{
-    updateSelectInput(session,"tm","Variable",unique(et$TABLE[et$YEAR==ym()]), selected="Ownership type")
+    updateSelectInput(session,"tm","Variable",unique(et$TABLE[et$YEAR==ym()]), selected="Size of forest holdings")
+  })
+  
+  #make sure population always corresponds with YEAR
+  observeEvent(y(),{
+    updateSelectInput(session,"p","Population",unique(et$STRATUM[et$YEAR==y()]))
+  })
+  observeEvent(ym(),{
+    updateSelectInput(session,"pm","Population",unique(et$STRATUM[et$YEAR==ym()]))
+  })
+  
+  #make sure that geography corresponds to population
+  observeEvent(p(),{
+    updateSelectInput(session,"s","State",unique(et$STATE[et$STRATUM==p()]), selected="United States")
   })
   
   #make sure DOWNLOAD ALL geographies always corresponds with year
@@ -246,6 +269,14 @@ server <- function(input, output, session) {
   })
   ym <- reactive({
     input$ym
+  })
+  
+  #selects desired population
+  p <- reactive({
+    input$p
+  })
+  pm <- reactive({
+    input$pm
   })
   
   #combination of year and table (mapping tap)
