@@ -14,7 +14,7 @@ options(stringsAsFactors = FALSE)
 #loads formatted estimates and reference tables
 load("NWOS_dashboard_DATA.RData")
 et <- et[et$INC==1,] #constrain to those that should be included (n=50+)
-et$STRATUM <- ordered(et$STRATUM,levels=c('FFO','SCORP'),labels=c('Family','Small corporate'))
+et$STRATUM <- ordered(et$STRATUM,levels=c('FFO','SCORP','LCORP'),labels=c('Family','Small corporate','Large corporate'))
 
 ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department of Agriculture logo",height=42),"National Woodland Owner Survey Dashboard (NWOS-DASH)"),
                  windowTitle="NWOS-DASH",
@@ -47,7 +47,7 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
         
         selectInput("p", "Population", unique(et$STRATUM)),
         
-        selectInput("d", "Domain (acres)", unique(et$DOMAIN), selected="10+"),
+        selectInput("d", "Domain (acres)", unique(et$DOMAIN)),
         
         selectInput("y", "NWOS Cycle", unique(et$YEAR)),
         
@@ -88,7 +88,7 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
 
                  selectInput("pm", "Population", unique(et$STRATUM)),
                  
-                 selectInput("dm", "Domain (acres)", unique(et$DOMAIN), selected="10+"),
+                 selectInput("dm", "Domain (acres)", unique(et$DOMAIN)),
                  
                  selectInput("ym", "NWOS Cycle", unique(et$YEAR)),
                  
@@ -179,7 +179,16 @@ server <- function(input, output, session) {
   
   #make sure DOMAIN always corresponds with STATE
   observeEvent(s(),{
-    updateSelectInput(session,"d","Domain (acres)",unique(et$DOMAIN[et$STATE==s()]), selected="10+")
+    updateSelectInput(session,"d","Domain (acres)",unique(et$DOMAIN[et$STATE==s()]))
+  })
+  
+  #make sure DOMAIN always corresponds with STRATUM
+  observeEvent(p(),{
+    updateSelectInput(session,"d","Domain (acres)",unique(et$DOMAIN[et$STRATUM==p()]))
+  })
+  #make sure DOMAIN always corresponds with STRATUM
+  observeEvent(pm(),{
+    updateSelectInput(session,"dm","Domain (acres)",unique(et$DOMAIN[et$STRATUM==pm()]))
   })
   
   #make sure VARIABLE always corresponds with STRATUM
@@ -241,6 +250,8 @@ server <- function(input, output, session) {
   unit <- reactive({
     if (grepl('Percent',input$u)){
       'percent'
+    } else if (input$u=='Ownerships'&input$p=='Large corporate'){
+      tolower(input$u)
     } else {
       paste('thousand',tolower(input$u))
     }
@@ -248,6 +259,8 @@ server <- function(input, output, session) {
   unit.map <- reactive({ #for mapping
     if (grepl('Percent',input$um)){
       'percent'
+    } else if (input$um=='Ownerships'&input$pm=='Large corporate'){
+      tolower(input$um)  
     } else {
       paste('thousand',tolower(input$um))
     }
@@ -298,11 +311,11 @@ server <- function(input, output, session) {
     if (input$u=='Acres'){
 	    ets <- subset(ets, STATISTIC=='TOTAL' & UNITS=='THOUSAND ACRES')
     } else if (input$u=='Ownerships'){
-	    ets <- subset(ets, STATISTIC=='TOTAL' & UNITS=='THOUSAND OWNERSHIPS')
+	    ets <- subset(ets, STATISTIC=='TOTAL' & UNITS %in% c('THOUSAND OWNERSHIPS','OWNERSHIPS'))
     } else if (input$u=='Percent of Acres'){
       ets <- subset(ets, STATISTIC=='PERCENTAGE' & UNITS=='THOUSAND ACRES')
     } else if (input$u=='Percent of Ownerships'){
-      ets <- subset(ets, STATISTIC=='PERCENTAGE' & UNITS=='THOUSAND OWNERSHIPS')
+      ets <- subset(ets, STATISTIC=='PERCENTAGE' & UNITS %in% c('THOUSAND OWNERSHIPS','OWNERSHIPS'))
     }
 	lv <- ets$LABEL[order(ets$ORDER)] #levels in order
   ets$LABEL <- ordered(ets$LABEL,levels=lv,labels=lv)
@@ -317,11 +330,11 @@ server <- function(input, output, session) {
     if (input$um=='Acres'){
 	    ets <- subset(ets, STATISTIC=='TOTAL' & UNITS=='THOUSAND ACRES')
     } else if (input$um=='Ownerships'){
-	    ets <- subset(ets, STATISTIC=='TOTAL' & UNITS=='THOUSAND OWNERSHIPS')
+	    ets <- subset(ets, STATISTIC=='TOTAL' & UNITS %in% c('THOUSAND OWNERSHIPS','OWNERSHIPS'))
     } else if (input$um=='Percent of Acres'){
       ets <- subset(ets, STATISTIC=='PERCENTAGE' & UNITS=='THOUSAND ACRES')
     } else if (input$um=='Percent of Ownerships'){
-      ets <- subset(ets, STATISTIC=='PERCENTAGE' & UNITS=='THOUSAND OWNERSHIPS')
+      ets <- subset(ets, STATISTIC=='PERCENTAGE' & UNITS %in% c('THOUSAND OWNERSHIPS','OWNERSHIPS'))
     }
     return(ets)
   }
@@ -344,7 +357,7 @@ server <- function(input, output, session) {
     tunits <- ifelse(grepl("Percent",u()),'Percentage of','Number of') #title units
     tunits2 <- ifelse(grepl("Acres",u()),'acres by','ownerships by') #title units 2
     des <- et$DESCRIPTION[match(t(),et$TABLE)] #description
-    title <- paste(tunits,tunits2,tolower(des)) #create title
+    title <- paste(tunits,tunits2,des) #create title
 
     if (!is.na(title)){
       title #prints question text
@@ -372,7 +385,7 @@ server <- function(input, output, session) {
     tunits <- ifelse(grepl("Percent",um()),'Percentage of','Number of') #title units
     tunits2 <- ifelse(grepl("Acres",um()),'acres by','ownerships by') #title units 2
     des <- et$DESCRIPTION[match(tm(),et$TABLE)] #description
-    title <- paste(tunits,tunits2,tolower(des)) #create title
+    title <- paste(tunits,tunits2,des) #create title
     title <- paste(title, ": ",ets$LABEL[1],sep="")
     
     if (!is.na(title)){

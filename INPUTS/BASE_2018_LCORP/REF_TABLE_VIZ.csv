@@ -1,0 +1,131 @@
+VARIABLE,TABLE,DROPDOWN,DESCRIPTION
+AC_WOOD_CAT,SIZE,Size of forest holdings,size of forest holdings in acres
+COMPANY_STRUCTURE,STRUCTURE,Company structure,company structure
+REIT,REIT,REIT,whether companies' are incorporated as Real Estate Investment Trusts (REITs)
+TIMO,TIMO,TIMO,whether companies' are structured as Timberland Investment Management Organizations (TIMOs)
+FMC,FMC,Forest management company (FMC),whether companies' operate as forest management companies (FMCs) managing lands for other clients
+OBJ_BEA,OBJ_1,Objectives: beauty or scenery,the importance of beauty or scenery as a reason for owning forestland
+OBJ_NAT,OBJ_1,Objectives: nature or biological diversity,the importance of protecting nature or biological diversity as a reason for owning forestland
+OBJ_WAT,OBJ_1,Objectives: water resources,the importance of protecting water resources as a reason for owning forestland
+OBJ_WIL,OBJ_1,Objectives: wildlife,the importance of protecting or improving wildlife habitat as a reason for owning forestland
+OBJ_INV,OBJ_1,Objectives: land investment,the importance of land investment as a reason for owning forestland
+OBJ_FIRE,OBJ_2,Objectives: firewood,the importance of firewood as a reason for owning forestland
+OBJ_TIM,OBJ_2,Objectives: timber products,the importance of timber products as a reason for owning forestland
+OBJ_NTFP,OBJ_2,Objectives: non-timber forest products,the importance of non-timber forest products as a reason for owning forestland
+OBJ_HUNT,OBJ_2,Objectives: hunting,the importance of hunting as a reason for owning forestland
+OBJ_REC,OBJ_3,Objectives: recreation,the importance of recreation (other than hunting) as a reason for owning forestland
+OBJ_CARB,OBJ_4,Objectives: carbon capture/sequestration,the importance of carbon capture or sequestration as a reason for owning forestland
+OBJ_MIN,OBJ_4,Objectives: mineral products,"the importance of mineral products, such as sand or gravel, as a reason for owning forestland"
+OBJ_OIL,OBJ_4,Objectives: oil and/or gas,the importance of oil and/or gas extraction as a reason for owning forestland
+ACQ_PAST_CAT,ACQ_PAST,Acreage aquired,the approximate acreage aquired by companies' in the past 5 years
+SOLD_PAST_CAT,SOLD_PAST,Acreage sold,the approximate acreage sold by companies' in the past 5 years
+MAN_IN,MAN,Field manager(s),who handles day-to-day field operations on the companies' forestland
+MAN_LOCAL,MAN,Field manager(s),who handles day-to-day field operations on the companies' forestland
+MAN_NATL,MAN,Field manager(s),who handles day-to-day field operations on the companies' forestland
+MAN_OTH,MAN,Field manager(s),who handles day-to-day field operations on the companies' forestland
+MANPLAN_PERC_CAT,MAN_PLAN,Management plan,the percentage of companies' land that is currently covered by a written management plan
+AC_HARV_YEAR_CAT,CUT,Annual acreage harvested,the average number of acres the companies' harvest annually
+THIN,THIN,Thinned,whether companies' thinned any of their forestland in the past 5 years
+SEED,SEED,Planted seedlings,whether companies' planted seedlings on their forestland in the past 5 years
+EVEN_AGE,EVEN_AGE,Even age stand structure,whether companies' have even age stands on their forestland
+SILV_OTH,SILV,Silvicultural practices,companies' use of silvicultural practices
+SILV_PLANT,SILV,Silvicultural practices,companies' use of silvicultural practices
+SILV_SHELTER,SILV,Silvicultural practices,companies' use of silvicultural practices
+SILV_SINGLE,SILV,Silvicultural practices,companies' use of silvicultural practices
+SILV_GROUP,SILV,Silvicultural practices,companies' use of silvicultural practices
+SILV_SEED,SILV,Silvicultural practices,companies' use of silvicultural practices
+SILV_COMM,SILV,Silvicultural practices,companies' use of silvicultural practices
+SILV_REAL,SILV,Silvicultural practices,companies' use of silvicultural practices
+SILV_PRECOM,SILV,Silvicultural practices,companies' use of silvicultural practices
+SILV_NAT,SILV,Silvicultural practices,companies' use of silvicultural practices
+MILLS,MILLS,Mill ownership,whether companies' own and operate one or more primary wood processing mills in the U.S.
+LONG_TERM,LONG,Long-term fiber/timber supply agreements,whether companies' have long-term timber/fiber supply agreements with mills or other primary processors
+LONG_TERM_PERC,LONG,Percent of wood going to long-term supply agreements,the percentage of companies' annual harvest going to fulfill long-term supply agreements in the past 5 years
+USE_MIN,USE,Other revenue,other activities for which companies' have collected usage fees
+USE_REC,USE,Other revenue,other activities for which companies' have collected usage fees
+USE_HUNT,USE,Other revenue,other activities for which companies' have collected usage fees
+USE_WET,USE,Other revenue,other activities for which companies' have collected usage fees
+USE_HAB,USE,Other revenue,other activities for which companies' have collected usage fees
+USE_AGRO,USE,Other revenue,other activities for which companies' have collected usage fees
+USE_OTH,USE,Other revenue,other activities for which companies' have collected usage fees
+USE_CARB,USE,Other revenue,other activities for which companies' have collected usage fees
+USE_TIM,USE,Other revenue,other activities for which companies' have collected usage fees
+USE_PWAT,USE,Other revenue,other activities for which companies' have collected usage fees
+ACT_CUT_SALE,ACT,Past management activities,past (past 5 years) management activities
+ACT_CUT_SALE_OWN,ACT,Past management activities,past (past 5 years) management activities
+ACT_NTFP,ACT,Past management activities,past (past 5 years) management activities
+ACT_RED_FIRE,ACT,Past management activities,past (past 5 years) management activities
+ACT_CONTROL,ACT,Past management activities,past (past 5 years) management activities
+ACT_INVA,ACT,Past management activities,past (past 5 years) management activities
+ACT_INS,ACT,Past management activities,past (past 5 years) management activities
+ACT_ROAD,ACT,Past management activities,past (past 5 years) management activities
+ACT_TRAIL,ACT,Past management activities,past (past 5 years) management activities
+ACT_WILD,ACT,Past management activities,past (past 5 years) management activities
+ACT_AGRO,ACT,Past management activities,past (past 5 years) management activities
+ACT_FERT,ACT,Past management activities,past (past 5 years) management activities
+ACT_HERB,ACT,Past management activities,past (past 5 years) management activities
+ACT_INSECTI,ACT,Past management activities,past (past 5 years) management activities
+ACT_OTH,ACT,Past management activities,past (past 5 years) management activities
+CERT,CERT,Green certification,participation in green certification programs
+CERT_PERC_CAT,CERT,"Green certification, percent of acreage",percentage of acreage enrolled in green certification programs
+CERT_FSC,CERT,"Green certification, specific programs",participation in specific green certification programs
+CERT_TREE,CERT,"Green certification, specific programs",participation in specific green certification programs
+CERT_PEFC,CERT,"Green certification, specific programs",participation in specific green certification programs
+CERT_SFI,CERT,"Green certification, specific programs",participation in specific green certification programs
+CERT_OTH,CERT,"Green certification, specific programs",participation in specific green certification programs
+EASE_PERC_CAT,EASE_PERC,Conservation easements,percentage of companies' acreage enrolled in a conservation easement
+WF_EQUIP,EQUP,Wildfire equipment,whether companies' own dedicated wildfire suppression equipment in the U.S.
+REC_EMP,REC,"Recreation, beneficiaries",who has recreated on companies' land in the past 5 years
+REC_FEE,REC,"Recreation, beneficiaries",who has recreated on companies' land in the past 5 years
+REC_GENPOP,REC,"Recreation, beneficiaries",who has recreated on companies' land in the past 5 years
+REC_NEIGH,REC,"Recreation, beneficiaries",who has recreated on companies' land in the past 5 years
+REC_NOBODY,REC,"Recreation, beneficiaries",who has recreated on companies' land in the past 5 years
+REC_OTH,REC,"Recreation, beneficiaries",who has recreated on companies' land in the past 5 years
+HOW_HUNT,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+HOW_FISH,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+HOW_HIKE,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+HOW_BIKE,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+HOW_CAMP,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+HOW_HORSE,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+HOW_SKI,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+HOW_OHV,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+HOW_OTH,REC,Recreational activities,what types of recreational activities have been conducted in the past 5 years
+RES_COOP,RES,Research activities,what types of research activities have been conducted in the past 5 years
+RES_FUND,RES,Research activities,what types of research activities have been conducted in the past 5 years
+RES_IN,RES,Research activities,what types of research activities have been conducted in the past 5 years
+COMM_ASSIST,COMM,Community engagement,what types of community assistance activities have been conducted in the past 5 years
+COMM_CHARITY,COMM,Community engagement,what types of community assistance activities have been conducted in the past 5 years
+COMM_GENPOP,COMM,Community engagement,what types of community assistance activities have been conducted in the past 5 years
+COMM_LO,COMM,Community engagement,what types of community assistance activities have been conducted in the past 5 years
+COMM_OTH,COMM,Community engagement,what types of community assistance activities have been conducted in the past 5 years
+CNC_AIR,CNC_1,Concerns: air pollution,companies' level of concern about air pollution
+CNC_CLIM,CNC_1,Concerns: climate change,companies' level of concern about climate change
+CNC_ANIM,CNC_1,Concerns: damage from animals,companies' level of concern about damage from animals
+CNC_DEV,CNC_1,Concerns: development of nearby lands,companies' level of concern about development of nearby lands
+CNC_WAT_LACK,CNC_1,Concerns: drought or lack of water,companies' level of concern about drought or lack of water
+CNC_OHV,CNC_1,Concerns: damage or noise from off-road vehicles,companies' level of concern about damage or noise from offroad vehicles
+CNC_GOVT,CNC_2,Concerns: government regulation,companies' level of concern about government regulation
+CNC_TAX,CNC_2,Concerns: high property taxes,companies' level of concern about high property taxes
+CNC_INVA,CNC_2,Concerns: invasive plants,companies' level of concern about invasive plants
+CNC_HEIR,CNC_2,Concerns: keeping land intact,companies' level of concern about keeping land intact for future generations
+CNC_DUMP,CNC_2,Concerns: misuse of wooded land,"companies' level of concern about misuse of wooded land, such as vandalism or dumping"
+CNC_TRES,CNC_2,Concerns: trespassing or poaching,companies' level of concern about trespassing or poaching
+CNC_INS,CNC_3,Concerns:  unwanted insects or diseases,companies' level of concern about unwanted insects or diseases
+CNC_WAT_POL,CNC_3,Concerns: water pollution,companies' level of concern about water pollution
+CNC_FIRE,CNC_3,Concerns: wildfire,companies' level of concern about wildfire
+CNC_STORM,CNC_3,Concerns: wind or ice storms,companies' level of concern about wind or ice storms
+CNC_CERT,CNC_4,Concerns: green certification status,companies' level of concern about maintaining green certification status
+CNC_CHEM,CNC_4,Concerns: regulated chemicals,companies' level of concern about regulated chemical inputs
+CNC_CONT,CNC_4,Concerns: logging contracts,companies' level of concern about securing logging contracts
+CNC_FIB,CNC_4,Concerns: fiber supply agreements,companies' level of concern about long-term fiber supply agreements
+CNC_FOR_PROD,CNC_4,Concerns: forest products industry,companies' level of concern about changes in the forest products industry
+CNC_INV_PREF,CNC_4,Concerns: investors' preferences,companies' level of concern about changes in investors' preferences
+CNC_LEASE,CNC_4,Concerns: leases,companies' level of concern about liability issues with hunting and recreational leases
+CNC_ROAD,CNC_4,Concerns: roads,companies' level of concern about state and local ordinances on road use and/or weight limits
+CNC_SEED,CNC_4,Concerns: planting stock,companies' level of concern about securing seedling planting stock
+CNC_TAR,CNC_4,Concerns: tariffs,companies' level of concern about international tariffs
+CNC_TAX_LAW,CNC_4,Concerns: taxes,companies' level of concern about changes in state or national tax laws or structures
+CNC_TIM_MARK,CNC_4,Concerns: timber markets,companies' level of concern about changes in timber markets
+CNC_TIM_REG,CNC_4,Concerns: timber regulations,companies' level of concern about changes in state or local ordinances in land use or timber management regulations
+REV,REV,Revenue from forestland operations,percentage of companies' total revenue from forestland operations
+TOTAL,TOTAL,Total,population

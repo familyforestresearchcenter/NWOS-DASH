@@ -1,0 +1,412 @@
+VARIABLE,LEVEL,LABEL,ORDER
+AC_HARV_YEAR_CAT,0,0-999,1
+AC_HARV_YEAR_CAT,1,"1,000-1,999",2
+AC_HARV_YEAR_CAT,2,"2,000-4,999",3
+AC_HARV_YEAR_CAT,5,"5,000-9,999",4
+AC_HARV_YEAR_CAT,10,"10,000-49,999",5
+AC_HARV_YEAR_CAT,50,"50,000-99,999",6
+AC_HARV_YEAR_CAT,100,"100,000+",7
+AC_WOOD_CAT,45,"45,000-99,999",1
+AC_WOOD_CAT,100,"100,000-199,999",2
+AC_WOOD_CAT,200,"200,000-499,999",3
+AC_WOOD_CAT,500,"500,000-999,999",4
+AC_WOOD_CAT,1000,"1,000,000-1,999,999",5
+AC_WOOD_CAT,2000,"2,000,000-2,999,999",6
+AC_WOOD_CAT,3000,"3,000,000+",7
+ACQ_PAST_CAT,0,0-999,1
+ACQ_PAST_CAT,1,"1,000-1,999",2
+ACQ_PAST_CAT,2,"2,000-4,999",3
+ACQ_PAST_CAT,5,"5,000-9,999",4
+ACQ_PAST_CAT,10,"10,000-49,999",5
+ACQ_PAST_CAT,50,"50,000-99,999",6
+ACQ_PAST_CAT,100,"100,000+",7
+ACT_AGRO,1,Agroforestry/livestock grazing,11
+ACT_CONTROL,1,Controlled burn/prescribed fire,5
+ACT_CUT_SALE,1,Cut and/or removed trees for sale,1
+ACT_CUT_SALE_OWN,1,Cut and/or removed trees for company use,2
+ACT_FERT,1,Used fertilizers,12
+ACT_HERB,1,Used herbicides,13
+ACT_INS,1,Eliminated or reduced unwanted insects or diseases,7
+ACT_INSECTI,1,Used insecticides,14
+ACT_INVA,1,Eliminated or reduced invasive plants,6
+ACT_NTFP,1,Collected nontimber forest products,3
+ACT_OTH,1,Other,15
+ACT_RED_FIRE,1,Reduced fire hazard,4
+ACT_ROAD,1,Road construction or maintenance,8
+ACT_TRAIL,1,Trail construction or maintenance,9
+ACT_WILD,1,Improved wildlife habitat,10
+CERT,1,Yes,1
+CERT,0,No,2
+CERT_FSC,1,Forest Stewardship Council (FSC),3
+CERT_OTH,1,Other,5
+CERT_PEFC,1,Programme for the Endorsement of Forest Certification (PEFC),1
+CERT_PEFC,-2,Not applicable,6
+CERT_PERC_CAT,0,0-49%,1
+CERT_PERC_CAT,50,50-69%,2
+CERT_PERC_CAT,70,70-79%,3
+CERT_PERC_CAT,80,80-89%,4
+CERT_PERC_CAT,90,90-94%,5
+CERT_PERC_CAT,95,95%+,6
+CERT_PERC_CAT,-2,Not applicable,7
+CERT_SFI,1,Sustainable Forestry Initiative (SFI),2
+CERT_TREE,1,American Tree Farm System,4
+CNC_AIR,5,Great concern,1
+CNC_AIR,4,Concern,2
+CNC_AIR,3,Moderate concern,3
+CNC_AIR,2,Of little concern,4
+CNC_AIR,1,No concern,5
+CNC_AIR,8,Not applicable,6
+CNC_ANIM,5,Great concern,1
+CNC_ANIM,4,Concern,2
+CNC_ANIM,3,Moderate concern,3
+CNC_ANIM,2,Of little concern,4
+CNC_ANIM,1,No concern,5
+CNC_ANIM,8,Not applicable,6
+CNC_CERT,5,Great concern,1
+CNC_CERT,4,Concern,2
+CNC_CERT,3,Moderate concern,3
+CNC_CERT,2,Of little concern,4
+CNC_CERT,1,No concern,5
+CNC_CERT,8,Not applicable,6
+CNC_CHEM,5,Great concern,1
+CNC_CHEM,4,Concern,2
+CNC_CHEM,3,Moderate concern,3
+CNC_CHEM,2,Of little concern,4
+CNC_CHEM,1,No concern,5
+CNC_CHEM,8,Not applicable,6
+CNC_CLIM,5,Great concern,1
+CNC_CLIM,4,Concern,2
+CNC_CLIM,3,Moderate concern,3
+CNC_CLIM,2,Of little concern,4
+CNC_CLIM,1,No concern,5
+CNC_CLIM,8,Not applicable,6
+CNC_CONT,5,Great concern,1
+CNC_CONT,4,Concern,2
+CNC_CONT,3,Moderate concern,3
+CNC_CONT,2,Of little concern,4
+CNC_CONT,1,No concern,5
+CNC_CONT,8,Not applicable,6
+CNC_DEV,5,Great concern,1
+CNC_DEV,4,Concern,2
+CNC_DEV,3,Moderate concern,3
+CNC_DEV,2,Of little concern,4
+CNC_DEV,1,No concern,5
+CNC_DEV,8,Not applicable,6
+CNC_DUMP,5,Great concern,1
+CNC_DUMP,4,Concern,2
+CNC_DUMP,3,Moderate concern,3
+CNC_DUMP,2,Of little concern,4
+CNC_DUMP,1,No concern,5
+CNC_DUMP,8,Not applicable,6
+CNC_FIB,5,Great concern,1
+CNC_FIB,4,Concern,2
+CNC_FIB,3,Moderate concern,3
+CNC_FIB,2,Of little concern,4
+CNC_FIB,1,No concern,5
+CNC_FIB,8,Not applicable,6
+CNC_FIRE,5,Great concern,1
+CNC_FIRE,4,Concern,2
+CNC_FIRE,3,Moderate concern,3
+CNC_FIRE,2,Of little concern,4
+CNC_FIRE,1,No concern,5
+CNC_FIRE,8,No applicable,6
+CNC_FOR_PROD,5,Great concern,1
+CNC_FOR_PROD,4,Concern,2
+CNC_FOR_PROD,3,Moderate concern,3
+CNC_FOR_PROD,2,Of little concern,4
+CNC_FOR_PROD,1,No concern,5
+CNC_FOR_PROD,8,Not applicable,6
+CNC_GOVT,5,Great concern,1
+CNC_GOVT,4,Concern,2
+CNC_GOVT,3,Moderate concern,3
+CNC_GOVT,2,Of little concern,4
+CNC_GOVT,1,No concern,5
+CNC_GOVT,8,Not applicable,6
+CNC_HEIR,5,Great concern,1
+CNC_HEIR,4,Concern,2
+CNC_HEIR,3,Moderate concern,3
+CNC_HEIR,2,Of little concern,4
+CNC_HEIR,1,No concern,5
+CNC_HEIR,8,Not applicable,6
+CNC_INS,5,Great concern,1
+CNC_INS,4,Concern,2
+CNC_INS,3,Moderate concern,3
+CNC_INS,2,Of little concern,4
+CNC_INS,1,No concern,5
+CNC_INS,8,No applicable,6
+CNC_INV_PREF,5,Great concern,1
+CNC_INV_PREF,4,Concern,2
+CNC_INV_PREF,3,Moderate concern,3
+CNC_INV_PREF,2,Of little concern,4
+CNC_INV_PREF,1,No concern,5
+CNC_INV_PREF,8,Not applicable,6
+CNC_INVA,5,Great concern,1
+CNC_INVA,4,Concern,2
+CNC_INVA,3,Moderate concern,3
+CNC_INVA,2,Of little concern,4
+CNC_INVA,1,No concern,5
+CNC_INVA,8,Not applicable,6
+CNC_LEASE,5,Great concern,1
+CNC_LEASE,4,Concern,2
+CNC_LEASE,3,Moderate concern,3
+CNC_LEASE,2,Of little concern,4
+CNC_LEASE,1,No concern,5
+CNC_LEASE,8,Not applicable,6
+CNC_OHV,5,Great concern,1
+CNC_OHV,4,Concern,2
+CNC_OHV,3,Moderate concern,3
+CNC_OHV,2,Of little concern,4
+CNC_OHV,1,No concern,5
+CNC_OHV,8,Not applicable,6
+CNC_OTH,5,Great concern,1
+CNC_OTH,4,Concern,2
+CNC_OTH,3,Moderate concern,3
+CNC_OTH,2,Of little concern,4
+CNC_OTH,1,No concern,5
+CNC_OTH,8,No applicable,6
+CNC_ROAD,5,Great concern,1
+CNC_ROAD,4,Concern,2
+CNC_ROAD,3,Moderate concern,3
+CNC_ROAD,2,Of little concern,4
+CNC_ROAD,1,No concern,5
+CNC_ROAD,8,Not applicable,6
+CNC_SEED,5,Great concern,1
+CNC_SEED,4,Concern,2
+CNC_SEED,3,Moderate concern,3
+CNC_SEED,2,Of little concern,4
+CNC_SEED,1,No concern,5
+CNC_SEED,8,Not applicable,6
+CNC_STORM,5,Great concern,1
+CNC_STORM,4,Concern,2
+CNC_STORM,3,Moderate concern,3
+CNC_STORM,2,Of little concern,4
+CNC_STORM,1,Not concern,5
+CNC_STORM,8,Not applicable,6
+CNC_TAR,5,Great concern,1
+CNC_TAR,4,Concern,2
+CNC_TAR,3,Moderate concern,3
+CNC_TAR,2,Of little concern,4
+CNC_TAR,1,No concern,5
+CNC_TAR,8,Not applicable,6
+CNC_TAX,5,Great concern,1
+CNC_TAX,4,Concern,2
+CNC_TAX,3,Moderate concern,3
+CNC_TAX,2,Of little concern,4
+CNC_TAX,1,No concern,5
+CNC_TAX,8,No applicable,6
+CNC_TAX_LAW,5,Great concern,1
+CNC_TAX_LAW,4,Concern,2
+CNC_TAX_LAW,3,Moderate concern,3
+CNC_TAX_LAW,2,Of little concern,4
+CNC_TAX_LAW,1,No concern,5
+CNC_TAX_LAW,8,Not applicable,6
+CNC_TIM_MARK,5,Great concern,1
+CNC_TIM_MARK,4,Concern,2
+CNC_TIM_MARK,3,Moderate concern,3
+CNC_TIM_MARK,2,Of little concern,4
+CNC_TIM_MARK,1,No concern,5
+CNC_TIM_MARK,8,Not applicable,6
+CNC_TIM_REG,5,Great concern,1
+CNC_TIM_REG,4,Concern,2
+CNC_TIM_REG,3,Moderate concern,3
+CNC_TIM_REG,2,Of little concern,4
+CNC_TIM_REG,1,No concern,5
+CNC_TIM_REG,8,Not applicable,6
+CNC_TRES,5,Great concern,1
+CNC_TRES,4,Concern,2
+CNC_TRES,3,Moderate concern,3
+CNC_TRES,2,Of little concern,4
+CNC_TRES,1,No concern,5
+CNC_TRES,8,Not applicable,6
+CNC_WAT_LACK,5,Great concern,1
+CNC_WAT_LACK,4,Concern,2
+CNC_WAT_LACK,3,Moderate concern,3
+CNC_WAT_LACK,2,Of little concern,4
+CNC_WAT_LACK,1,No concern,5
+CNC_WAT_LACK,8,No applicable,6
+CNC_WAT_POL,5,Great concern,1
+CNC_WAT_POL,4,Concern,2
+CNC_WAT_POL,3,Moderate concern,3
+CNC_WAT_POL,2,Of little concern,4
+CNC_WAT_POL,1,No concern,5
+CNC_WAT_POL,8,Not applicable,6
+COMM_ASSIST,1,Land technical assistance,1
+COMM_CHARITY,1,Charitable contributions,2
+COMM_GENPOP,1,Outreach/education to the general public,4
+COMM_LO,1,Outreach/education to landowners,3
+COMM_OTH,1,Other,5
+COMPANY_STRUCTURE,1,Publicly-traded corporatation,1
+COMPANY_STRUCTURE,2,Privately-held C-corporation,2
+COMPANY_STRUCTURE,3,Privately-held S-corporation,3
+COMPANY_STRUCTURE,4,LLC,4
+COMPANY_STRUCTURE,5,Other,5
+EASE_PERC_CAT,0,0%,1
+EASE_PERC_CAT,1,1-4%,2
+EASE_PERC_CAT,5,5-19%,3
+EASE_PERC_CAT,20,20-49%,4
+EASE_PERC_CAT,50,50%+,5
+EVEN_AGE,1,Yes,1
+EVEN_AGE,0,No,2
+FMC,1,Yes,1
+FMC,0,No,2
+HOW_BIKE,1,Biking,4
+HOW_CAMP,1,Camping,5
+HOW_FISH,1,Fishing,2
+HOW_HIKE,1,Hiking/walking,3
+HOW_HORSE,1,Horseback riding,6
+HOW_HUNT,1,Hunting,1
+HOW_HUNT,-2,Not applicable,10
+HOW_OHV,1,Off-road vehicles,8
+HOW_OTH,1,Other,9
+HOW_SKI,1,Skiing/snowshoeing,7
+LONG_TERM,1,Yes,1
+LONG_TERM,0,No,2
+LONG_TERM_PERC,1,<25%,1
+LONG_TERM_PERC,2,26-49%,2
+LONG_TERM_PERC,3,50-74%,3
+LONG_TERM_PERC,4,75-99%,4
+LONG_TERM_PERC,5,100%,5
+LONG_TERM_PERC,-2,Not applicable,6
+MAN_IN,1,Company employees,1
+MAN_LOCAL,1,Local/regional consultants,2
+MAN_NATL,1,National consultants,3
+MAN_OTH,1,Other,4
+MAN_OTH,1,Other,9
+MANPLAN_PERC_CAT,0,0-49%,1
+MANPLAN_PERC_CAT,50,50-69%,2
+MANPLAN_PERC_CAT,70,70-79%,3
+MANPLAN_PERC_CAT,80,80-89%,4
+MANPLAN_PERC_CAT,90,90-94%,5
+MANPLAN_PERC_CAT,95,95-100%,6
+MILLS,1,Yes,1
+MILLS,0,No,2
+OBJ_BEA,5,Very important,1
+OBJ_BEA,4,Important,2
+OBJ_BEA,3,Moderately important,3
+OBJ_BEA,2,Of little importance,4
+OBJ_BEA,1,Not important,5
+OBJ_BEA,8,Not applicable,6
+OBJ_CARB,5,Very important,1
+OBJ_CARB,4,Important,2
+OBJ_CARB,3,Moderately important,3
+OBJ_CARB,2,Of little importance,4
+OBJ_CARB,1,Not important,5
+OBJ_CARB,8,Not applicable,6
+OBJ_FIRE,5,Very important,1
+OBJ_FIRE,4,Important,2
+OBJ_FIRE,3,Moderately important,3
+OBJ_FIRE,2,Of little importance,4
+OBJ_FIRE,1,Not important,5
+OBJ_FIRE,8,Not applicable,6
+OBJ_HUNT,5,Very important,1
+OBJ_HUNT,4,Important,2
+OBJ_HUNT,3,Moderately important,3
+OBJ_HUNT,2,Of little importance,4
+OBJ_HUNT,1,Not important,5
+OBJ_HUNT,8,Not applicable,6
+OBJ_INV,5,Very important,1
+OBJ_INV,4,Important,2
+OBJ_INV,3,Moderately important,3
+OBJ_INV,2,Of little importance,4
+OBJ_INV,1,Not important,5
+OBJ_INV,8,Not applicable,6
+OBJ_MIN,5,Very important,1
+OBJ_MIN,4,Important,2
+OBJ_MIN,3,Moderately important,3
+OBJ_MIN,2,Of little importance,4
+OBJ_MIN,1,Not important,5
+OBJ_MIN,8,Not applicable,6
+OBJ_NAT,5,Very important,1
+OBJ_NAT,4,Important,2
+OBJ_NAT,3,Moderately important,3
+OBJ_NAT,2,Of little importance,4
+OBJ_NAT,1,Not important,5
+OBJ_NAT,8,Not applicable,6
+OBJ_NTFP,5,Very important,1
+OBJ_NTFP,4,Important,2
+OBJ_NTFP,3,Moderately important,3
+OBJ_NTFP,2,Of little importance,4
+OBJ_NTFP,1,Not important,5
+OBJ_NTFP,8,Not applicable,6
+OBJ_OIL,5,Very important,1
+OBJ_OIL,4,Important,2
+OBJ_OIL,3,Moderately important,3
+OBJ_OIL,2,Of little importance,4
+OBJ_OIL,1,Not important,5
+OBJ_OIL,8,Not applicable,6
+OBJ_REC,5,Very important,1
+OBJ_REC,4,Important,2
+OBJ_REC,3,Moderately important,3
+OBJ_REC,2,Of little importance,4
+OBJ_REC,1,Not important,5
+OBJ_REC,8,Not applicable,6
+OBJ_TIM,5,Very important,1
+OBJ_TIM,4,Important,2
+OBJ_TIM,3,Moderately important,3
+OBJ_TIM,2,Of little importance,4
+OBJ_TIM,1,Not important,5
+OBJ_TIM,8,Not applicable,6
+OBJ_WAT,5,Very important,1
+OBJ_WAT,4,Important,2
+OBJ_WAT,3,Moderately important,3
+OBJ_WAT,2,Of little importance,4
+OBJ_WAT,1,Not important,5
+OBJ_WAT,8,Not applicable,6
+OBJ_WIL,5,Very important,1
+OBJ_WIL,4,Important,2
+OBJ_WIL,3,Moderately important,3
+OBJ_WIL,2,Of little importance,4
+OBJ_WIL,1,Not important,5
+OBJ_WIL,8,Not applicable,6
+REC_EMP,1,Company employees,1
+REC_FEE,1,General public (for fee),3
+REC_GENPOP,1,General public (free),4
+REC_NEIGH,1,Neighbors,2
+REC_NOBODY,1,Nobody,6
+REC_OTH,1,Other,5
+REIT,1,Yes,1
+REIT,0,No,2
+RES_COOP,1,Contribute to research cooperatives,3
+RES_FUND,1,Directly fund scientific research,2
+RES_IN,1,Employ in-house researchers,1
+REV,1,0-25%,1
+REV,2,26-49%,2
+REV,3,50-74%,3
+REV,4,75-99%,4
+REV,5,100%,5
+SEED,1,Yes,1
+SEED,0,No,2
+SILV_COMM,1,Commercial thinnings,7
+SILV_GROUP,1,Group selection,6
+SILV_NAT,1,Clearcut with natural regeneration,2
+SILV_OTH,1,Other,10
+SILV_PLANT,1,Clearcut with planting,1
+SILV_PRECOM,1,Pre-commercial thinnings,8
+SILV_REAL,1,Real estate cuts,9
+SILV_SEED,1,Seedtree cuts,3
+SILV_SHELTER,1,Shelterwood,4
+SILV_SINGLE,1,Single tree selection,5
+SOLD_PAST_CAT,0,0-999,1
+SOLD_PAST_CAT,1,"1,000-1,999",2
+SOLD_PAST_CAT,2,"2,000-4,999",3
+SOLD_PAST_CAT,5,"5,000-9,999",4
+SOLD_PAST_CAT,10,"10,000-49,999",5
+SOLD_PAST_CAT,50,"50,000-99,999",6
+SOLD_PAST_CAT,100,"100,000+",7
+THIN,1,Yes,1
+THIN,0,No,2
+TIMO,1,Yes,1
+TIMO,0,No,2
+TOTAL,1,Small corporate,1
+USE_AGRO,1,Agroforestry / livestock grazing,8
+USE_CARB,1,Carbon sequestration ,9
+USE_HAB,1,Wildlife habitat or biodiversity program,7
+USE_HUNT,1,Hunting,4
+USE_MIN,1,"Mineral, oil, or gas extraction",1
+USE_OTH,1,Other,10
+USE_PWAT,1,Public water supply protection,6
+USE_REC,1,Recreation (other than hunting),3
+USE_TIM,1,Long-term leasing for timber production,2
+USE_WET,1,Wetland mitigation banking,5
+WF_EQUIP,1,Yes,1
+WF_EQUIP,0,No,2
