@@ -223,5 +223,4 @@ OWN1_RACE_ASIAN,DEMO,Landowner race,race of primary owner
 OWN1_RACE_BLACK,DEMO,Landowner race,race of primary owner
 OWN1_RACE_HAWAIIAN,DEMO,Landowner race,race of primary owner
 OWN1_RACE_WHITE,DEMO,Landowner race,race of primary owner
-INC_WOOD_CAT,INC_WOOD_CAT,Income from wooded land,percentage of annual income is derived from forestland (primary owner)
 TOTAL,TOTAL,Total,population
