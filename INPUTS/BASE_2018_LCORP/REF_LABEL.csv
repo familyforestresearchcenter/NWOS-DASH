@@ -397,7 +397,7 @@ THIN,1,Yes,1
 THIN,0,No,2
 TIMO,1,Yes,1
 TIMO,0,No,2
-TOTAL,1,Small corporate,1
+TOTAL,1,Large corporate,1
 USE_AGRO,1,Agroforestry / livestock grazing,8
 USE_CARB,1,Carbon sequestration ,9
 USE_HAB,1,Wildlife habitat or biodiversity program,7

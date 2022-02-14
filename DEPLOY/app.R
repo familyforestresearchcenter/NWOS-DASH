@@ -39,7 +39,7 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
       
       sidebarPanel(
         
-        selectInput("t", "Variable", unique(et$TABLE), selected="Size of forest holdings"),
+        selectInput("t", "Variable", unique(et$TABLE[et$STRATUM=='FFO'&et$YEAR=='2018']), selected="Size of forest holdings"),
         
         selectInput("u", "Unit", c('Acres','Ownerships','Percent of Acres','Percent of Ownerships')),
         
@@ -80,7 +80,7 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
                
                sidebarPanel(
                  
-                 selectInput("tm", "Variable", unique(et$TABLE), selected="Size of forest holdings"),
+                 selectInput("tm", "Variable", unique(et$TABLE[et$STRATUM=='FFO'&et$YEAR=='2018']), selected="Size of forest holdings"),
                  
                  selectInput("l", "Level", unique(et$LABEL)),
                  
@@ -172,59 +172,6 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
 
 server <- function(input, output, session) {
   
-  #make sure LEVEL always corresponds with TABLE and CYCLE (mapping tab)
-  observeEvent(tmym(),{
-    updateSelectInput(session,"l","Level",unique(et$LABEL[et$TABLE==tm()&et$YEAR==ym()]))
-  })
-  
-  #make sure DOMAIN always corresponds with STATE
-  observeEvent(s(),{
-    updateSelectInput(session,"d","Domain (acres)",unique(et$DOMAIN[et$STATE==s()]))
-  })
-  
-  #make sure DOMAIN always corresponds with STRATUM
-  observeEvent(p(),{
-    updateSelectInput(session,"d","Domain (acres)",unique(et$DOMAIN[et$STRATUM==p()]))
-  })
-  #make sure DOMAIN always corresponds with STRATUM
-  observeEvent(pm(),{
-    updateSelectInput(session,"dm","Domain (acres)",unique(et$DOMAIN[et$STRATUM==pm()]))
-  })
-  
-  #make sure VARIABLE always corresponds with STRATUM
-  observeEvent(p(),{
-    updateSelectInput(session,"t","Variable",unique(et$TABLE[et$STRATUM==p()]), selected="Size of forest holdings")
-  })
-  observeEvent(pm(),{
-    updateSelectInput(session,"tm","Variable",unique(et$TABLE[et$STRATUM==pm()]), selected="Size of forest holdings")
-  })
-  
-  #make sure VARIABLE always corresponds with YEAR
-  observeEvent(y(),{
-    updateSelectInput(session,"t","Variable",unique(et$TABLE[et$YEAR==y()]), selected="Size of forest holdings")
-  })
-  observeEvent(ym(),{
-    updateSelectInput(session,"tm","Variable",unique(et$TABLE[et$YEAR==ym()]), selected="Size of forest holdings")
-  })
-  
-  #make sure population always corresponds with YEAR
-  observeEvent(y(),{
-    updateSelectInput(session,"p","Population",unique(et$STRATUM[et$YEAR==y()]))
-  })
-  observeEvent(ym(),{
-    updateSelectInput(session,"pm","Population",unique(et$STRATUM[et$YEAR==ym()]))
-  })
-  
-  #make sure that geography corresponds to population
-  observeEvent(p(),{
-    updateSelectInput(session,"s","State",unique(et$STATE[et$STRATUM==p()]), selected="United States")
-  })
-  
-  #make sure DOWNLOAD ALL geographies always corresponds with year
-  observeEvent(yall(),{
-    updateSelectInput(session,"sall","State",c('All Geographies',unique(et$STATE[et$YEAR==yall()])), selected="All Geographies")
-  })
-  
   #selects desired table
   t <- reactive({
     input$t
@@ -292,14 +239,42 @@ server <- function(input, output, session) {
     input$pm
   })
   
-  #combination of year and table (mapping tap)
-  tmym <- reactive({
-    list(input$tm,input$ym)
-  })
-  
   #year on ABOUT tab
   yall <- reactive({
     input$yall
+  })
+  
+  #update dropdown choices dynamically
+  
+  observeEvent(y(),{ #when year is changed
+    updateSelectInput(session,"t","Variable",unique(et$TABLE[et$YEAR==y()&et$STRATUM==p()]), selected="Size of forest holdings")
+    updateSelectInput(session,"p","Population",unique(et$STRATUM[et$YEAR==y()]))
+  })
+  observeEvent(p(),{ #when stratum is changed
+    updateSelectInput(session,"d","Domain (acres)",unique(et$DOMAIN[et$STRATUM==p()]))
+    updateSelectInput(session,"t","Variable",unique(et$TABLE[et$STRATUM==p()&et$YEAR==y()]), selected="Size of forest holdings")
+    updateSelectInput(session,"s","State",unique(et$STATE[et$STRATUM==p()]), selected="United States")
+  })
+  observeEvent(s(),{ #when state is changed
+    updateSelectInput(session,"d","Domain (acres)",unique(et$DOMAIN[et$STATE==s()]))
+  })
+  
+  observeEvent(ym(),{ #when year is changed (map tab)
+    updateSelectInput(session,"tm","Variable",unique(et$TABLE[et$YEAR==y()&et$STRATUM==pm()]), selected="Size of forest holdings")
+    updateSelectInput(session,"pm","Population",unique(et$STRATUM[et$YEAR==ym()]))
+    updateSelectInput(session,"l","Level",unique(et$LABEL[et$TABLE==tm()&et$YEAR==ym()&et$STRATUM==pm()]))
+  })
+  observeEvent(pm(),{ #when stratum is changed (map tab)
+    updateSelectInput(session,"dm","Domain (acres)",unique(et$DOMAIN[et$STRATUM==pm()]))
+    updateSelectInput(session,"tm","Variable",unique(et$TABLE[et$STRATUM==pm()&et$YEAR==ym()]), selected="Size of forest holdings")
+    updateSelectInput(session,"l","Level",unique(et$LABEL[et$TABLE==tm()&et$YEAR==ym()&et$STRATUM==pm()]))
+  })
+  observeEvent(tm(),{ #when variable is changed (map tab)
+    updateSelectInput(session,"l","Level",unique(et$LABEL[et$TABLE==tm()&et$YEAR==ym()&et$STRATUM==pm()]))
+  })
+  
+  observeEvent(yall(),{ #when year is selected (download tab)
+    updateSelectInput(session,"sall","State",c('All Geographies',unique(et$STATE[et$YEAR==yall()])), selected="All Geographies")
   })
   
   #function to subset et based on choices, main tab
