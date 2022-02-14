@@ -86,7 +86,7 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
                  
                  selectInput("um", "Unit", c('Percent of Acres','Percent of Ownerships','Acres','Ownerships')),
 
-                 selectInput("pm", "Population", unique(et$STRATUM)),
+                 selectInput("pm", "Population", unique(et$STRATUM[et$STATE%in%states@data$STATE_NWOS_ALPHA])),
                  
                  selectInput("dm", "Domain (acres)", unique(et$DOMAIN)),
                  
@@ -130,7 +130,7 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
 					<li><b>Forest</b>: Forest or woodland, defined as \"land that has at least 10 percent crown cover by live tally trees of any size or has had at least 10 percent canopy cover of live tally species in the past, based on the presence of stumps, snags, or other evidence. To qualify, the area must be at least 1.0 acre in size and 120.0 feet wide\".</li>
 					<li><b>FFO/Family</b>: Family forest ownership, an ownership composed of individuals, families, and trusts that owns 1+ acres of forested land.</li>
 					<li><b>Small corporate</b>: Small corporate ownership, which may include clubs, associations, conservation groups, other NGOs, and corporations or businesses owning <i>less</i> than 45 thousand acres nationwide.</li>
-					<li><b>Large corporate</b>: Large corporate ownership, corporations or businesses owning <i>more</i> than 45 thousand acres nationwide. Study of large corporate ownerships is still in a pilot phase and therefore not yet included in NWOS-DASH. An early analysis of large corporate ownerships is included in <a href='https://www.nrs.fs.fed.us/pubs/62485' target='_blank'>this article (opens in new window)</a>.</li>
+					<li><b>Large corporate</b>: Large corporate ownership, corporations or businesses owning <i>more</i> than 45 thousand acres nationwide. An early analysis of large corporate ownerships is included in <a href='https://www.nrs.fs.fed.us/pubs/62485' target='_blank'>this article (opens in new window)</a>.</li>
 					<li><b>LLC</b>: Limited Liability Company.</li>
 					<li><b>LLP</b>: Limited Liability Partnership.</li>
 					</ul>"))),
@@ -261,7 +261,7 @@ server <- function(input, output, session) {
   
   observeEvent(ym(),{ #when year is changed (map tab)
     updateSelectInput(session,"tm","Variable",unique(et$TABLE[et$YEAR==y()&et$STRATUM==pm()]), selected="Size of forest holdings")
-    updateSelectInput(session,"pm","Population",unique(et$STRATUM[et$YEAR==ym()]))
+    updateSelectInput(session,"pm","Population",unique(et$STRATUM[et$YEAR==ym()&et$STATE%in%states@data$STATE_NWOS_ALPHA]))
     updateSelectInput(session,"l","Level",unique(et$LABEL[et$TABLE==tm()&et$YEAR==ym()&et$STRATUM==pm()]))
   })
   observeEvent(pm(),{ #when stratum is changed (map tab)
