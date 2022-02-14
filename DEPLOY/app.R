@@ -86,7 +86,7 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
                  
                  selectInput("um", "Unit", c('Percent of Acres','Percent of Ownerships','Acres','Ownerships')),
 
-                 selectInput("pm", "Population", unique(et$STRATUM)),
+                 selectInput("pm", "Population", unique(et$STRATUM[et$STATE%in%states@data$STATE_NWOS_ALPHA])),
                  
                  selectInput("dm", "Domain (acres)", unique(et$DOMAIN)),
                  
@@ -261,7 +261,7 @@ server <- function(input, output, session) {
   
   observeEvent(ym(),{ #when year is changed (map tab)
     updateSelectInput(session,"tm","Variable",unique(et$TABLE[et$YEAR==y()&et$STRATUM==pm()]), selected="Size of forest holdings")
-    updateSelectInput(session,"pm","Population",unique(et$STRATUM[et$YEAR==ym()]))
+    updateSelectInput(session,"pm","Population",unique(et$STRATUM[et$YEAR==ym()&et$STATE%in%states@data$STATE_NWOS_ALPHA]))
     updateSelectInput(session,"l","Level",unique(et$LABEL[et$TABLE==tm()&et$YEAR==ym()&et$STRATUM==pm()]))
   })
   observeEvent(pm(),{ #when stratum is changed (map tab)
