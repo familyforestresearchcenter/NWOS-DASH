@@ -11,6 +11,8 @@ library(jsonlite)
 #changing global settings
 options(stringsAsFactors = FALSE)
 
+memory.limit(size=25000)
+
 #loads formatted estimates and reference tables
 load("NWOS_dashboard_DATA.RData")
 et <- et[et$INC==1,] #constrain to those that should be included (n=50+)
@@ -72,6 +74,13 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
         
       )
     )
+  ),
+  
+  tabPanel("Bivariate Results",
+           mainPanel(
+             HTML("<p lang='en'><h4>Bivariate Results</h4></p>
+                        <p lang='en'>NWOS-DASH will eventually include full capability for bivariate cross-tabulation. In the meanwhile, the user is directed towards legacy Tablemaker applications for <a href='https://apps.fs.usda.gov/nwos/tablemaker.jsp' target='_blank'>2013 (opens in new window)</a> and <a href='https://apps.fs.usda.gov/nwos/tablemakerVersion1.jsp' target='_blank'>2006 (opens in new window)</a> survey cycles</p>")
+           )
   ),
   
   tabPanel("Mapped Results",
