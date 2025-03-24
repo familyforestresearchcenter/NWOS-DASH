@@ -11,12 +11,16 @@ library(jsonlite)
 #changing global settings
 options(stringsAsFactors = FALSE)
 
-memory.limit(size=25000)
-
 #loads formatted estimates and reference tables
 load("NWOS_dashboard_DATA.RData")
 et <- et[et$INC==1,] #constrain to those that should be included (n=50+)
 et$STRATUM <- ordered(et$STRATUM,levels=c('FFO','SCORP','LCORP'),labels=c('Family','Small corporate','Large corporate'))
+
+#changes in terminology due to administrative requirements
+et$VARIABLE <- gsub("GENDER","SEX",et$VARIABLE) #rename gender to sex
+et$TABLE <- gsub("gender","sex",et$TABLE)
+et$DESCRIPTION <- gsub("gender","sex",et$DESCRIPTION)
+# et <- et[et$VARIABLE!="CNC_CLIM",] #remove climate change question
 
 ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department of Agriculture logo",height=42),"National Woodland Owner Survey Dashboard (NWOS-DASH)"),
                  windowTitle="NWOS-DASH",
@@ -79,7 +83,7 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
   tabPanel("Bivariate Results",
            mainPanel(
              HTML("<p lang='en'><h4>Bivariate Results</h4></p>
-                        <p lang='en'>NWOS-DASH will eventually include full capability for bivariate cross-tabulation. In the meanwhile, the user is directed towards legacy Tablemaker applications for <a href='https://apps.fs.usda.gov/nwos/tablemaker.jsp' target='_blank'>2013 (opens in new window)</a> and <a href='https://apps.fs.usda.gov/nwos/tablemakerVersion1.jsp' target='_blank'>2006 (opens in new window)</a> survey cycles</p>")
+                        <p lang='en'>NWOS-DASH will eventually include full capability for bivariate cross-tabulation.</p>")
            )
   ),
   
@@ -139,7 +143,7 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
 					<li><b>Forest</b>: Forest or woodland, defined as \"land that has at least 10 percent crown cover by live tally trees of any size or has had at least 10 percent canopy cover of live tally species in the past, based on the presence of stumps, snags, or other evidence. To qualify, the area must be at least 1.0 acre in size and 120.0 feet wide\".</li>
 					<li><b>FFO/Family</b>: Family forest ownership, an ownership composed of individuals, families, and trusts that owns 1+ acres of forested land.</li>
 					<li><b>Small corporate</b>: Small corporate ownership, which may include clubs, associations, conservation groups, other NGOs, and corporations or businesses owning <i>less</i> than 45 thousand acres nationwide.</li>
-					<li><b>Large corporate</b>: Large corporate ownership, corporations or businesses owning <i>more</i> than 45 thousand acres nationwide. An early analysis of large corporate ownerships is included in <a href='https://www.nrs.fs.fed.us/pubs/62485' target='_blank'>this article (opens in new window)</a>.</li>
+					<li><b>Large corporate</b>: Large corporate ownership, corporations or businesses owning <i>more</i> than 45 thousand acres nationwide. An early analysis of large corporate ownerships is included in <a href='https://research.fs.usda.gov/treesearch/53826' target='_blank'>this article (opens in new window)</a>.</li>
 					<li><b>LLC</b>: Limited Liability Company.</li>
 					<li><b>LLP</b>: Limited Liability Partnership.</li>
 					</ul>"))),
@@ -172,7 +176,7 @@ ui <- navbarPage(title=div(img(src="usdalogo.svg",alt="United States Department 
                         <li>What they have done with their forests in the past?</li>
                         <li>What they plan to do with their forests in the future?</li></ul>
                         <p lang='en'>Summary information from the NWOS is used by people who provide, design, and implement services and policies that impact private forest owners, including government agencies, landowner organizations and other non-governmental organizations, private service providers, business analysts, forest industry companies, and academic researchers.</p>
-                        <p lang='en'>The National Woodland Owner Survey is implemented by the <a href='http://www.familyforestresearchcenter.org/' target='_blank'>Family Forest Research Center (opens in new window)</a>, a joint venture between the USDA Forest Service, Forest Inventory and Analysis Program and the University of Massachusetts Amherst. More information on the NWOS, including official reports, summary tables, and survey instruments can be found on the <a href='https://www.fia.fs.fed.us/nwos/' target='_blank'>NWOS website (opens in new window)</a>.</p>"),
+                        <p lang='en'>The National Woodland Owner Survey is implemented by the <a href='http://www.familyforestresearchcenter.org/' target='_blank'>Family Forest Research Center (opens in new window)</a>, a joint venture between the USDA Forest Service, Forest Inventory and Analysis Program and the University of Massachusetts Amherst. More information on the NWOS, including official reports, summary tables, and survey instruments can be found on the <a href='https://research.fs.usda.gov/programs/nwos' target='_blank'>NWOS website (opens in new window)</a>.</p>"),
                         HTML(paste("<p lang='en'><b>Suggested citation: Caputo, J. and B. Butler. National Woodland Owner Survey Dashboard (NWOS-DASH) version 1.0. Accessed ", Sys.Date(), ".</b></p>",sep=""))
                       )
                     )
@@ -393,7 +397,7 @@ server <- function(input, output, session) {
     if (nrow(ets)>0){
       pl<-ggplot(data=ets,aes(x=LABEL,y=VALUE,label=Value,label2=StdErr))+
         geom_bar(stat="identity",fill='darkgoldenrod2')+
-        geom_errorbar(limits,width=0,size=0.5,position=position_dodge(width=0.90))+
+        geom_errorbar(limits,width=0,linewidth=0.5,position=position_dodge(width=0.90))+
         labs(x="ROW",y=unit())+
         scale_x_discrete(labels=wrap_format(10))+
         scale_y_continuous(label=comma)+
